@@ -948,7 +948,6 @@ class PlayState extends MusicBeatState
 		{
 			add(replayTxt);
 		}
-		// Literally copy-paste of the above, fuckass.
 		botPlayState = new FlxText(healthBarBG.x + healthBarBG.width / 2 - 75, healthBarBG.y + (FlxG.save.data.downscroll ? 100 : -100), 0, "", 20);
 		botPlayState.setFormat(Paths.font("vcr.ttf"), 42, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		botPlayState.scrollFactor.set();
@@ -1805,7 +1804,7 @@ class PlayState extends MusicBeatState
 		if (FlxG.keys.justPressed.SEVEN)
 		{
 			#if windows
-			DiscordClient.changePresence("Chart Editor", null, null, true);
+			DiscordClient.changePresence("CHART EDITOR", null, null, true);
 			#end
 			FlxG.switchState(new ChartingState());
 			#if windows

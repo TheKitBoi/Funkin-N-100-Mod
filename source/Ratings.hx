@@ -18,6 +18,7 @@ class Ratings
             ranking = "(SDCB)";
         else
             ranking = "(CLR)";
+          // tmm kaiz is the opposite of 8f67g8y7y6tf54d6r6ftgyuhijok
 
         // WIFE TIME :)))) (based on Wife3)
 
