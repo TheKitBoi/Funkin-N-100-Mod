@@ -13,7 +13,7 @@ Links: **[itch.io page](https://ninja-muffin24.itch.io/funkin) ⋅ [Newgrounds](
 ## FNF': N-100 Mod
 **Friday Night Funkin': N-100 Mod** is a modification for Friday Night Funkin', replacing most assets of the original game and brining a new "flashy" and "neon" theme to Funkin', using Kade Engine.
 
-Links: **[GameBanana mod page](https://gamebanana.com/mods/44357)
+Links: **[GameBanana mod page](https://gamebanana.com/mods/44357)**
 
 **REMEMBER**: This is a **mod**. This is not the vanilla game and should be treated as a **modification**. This is not and probably will never be official, so don't get confused.
 
