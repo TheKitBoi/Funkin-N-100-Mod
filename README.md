@@ -67,7 +67,7 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [Rozological](http://instagram.com/rozological) - Lead Programmer, Music, Sprites Creator
 - [nnixis](http://instagram.com/nnixis) - Sprites & Lore Manager
 - [Labrrxnth](http://instagram.com/julian_nrnjo) - Mod Manager
-- [TMM Niko](http://instagram.conmtmm_niko) - Sideline Musician, The Broski
+- [TMM Niko](http://instagram.com/tmm_niko) - Sideline Musician, The Broski
 
 ### Kade Engine
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
