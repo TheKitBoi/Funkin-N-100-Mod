@@ -63,7 +63,7 @@ class Alphabet extends FlxSpriteGroup
 				addText();
 			}
 
-			// transfromer
+			// transfromerr
 
 		}
 	}
