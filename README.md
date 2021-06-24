@@ -39,7 +39,7 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 
 ![Options Menu](https://cdn.discordapp.com/attachments/847017690891550740/857708782120337458/2021-06-24_4.png)
 
-# Features
+# Kade Engine's Features
 
  - **New Input System**
 	 - An improved input system, similar to Quaver or Etterna, with less delays, less dropped inputs and other improvements.
@@ -56,10 +56,19 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 # Credits
 ### Friday Night Funkin'
  - [ninjamuffin99](https://twitter.com/ninja_muffin99) - Programming
- - [PhantomArcade3K](https://twitter.com/phantomarcade3k) and [Evilsk8r](https://twitter.com/evilsk8r) - Art
+ - [PhantomArcade3K](https://twitter.com/phantomarcade3k) - Animation
+ - [Evilsk8r](https://twitter.com/evilsk8r) - Art
  - [Kawai Sprite](https://twitter.com/kawaisprite) - Music
 
 This game was made with love to Newgrounds and its community. Extra love to Tom Fulp.
+
+### Friday Night Funkin' N-100 Mod
+- [Trinichrys](https://instagram.com/trinichrys) - N-100 Creator, Music, Art
+- [Rozological](http://instagram.com/rozological) - Lead Programmer, Music, Sprites Creator
+- [nnixis](http://instagram.com/nnixis) - Sprites & Lore Manager
+- [Labrrxnth](http://instagram.com/julian_nrnjo) - Mod Manager
+- [TMM Niko](http://instagram.conm/tmm_niko) - Sideline Musician, The Broski
+
 ### Kade Engine
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
 - [The contributors](https://github.com/KadeDev/Kade-Engine/graphs/contributors)
