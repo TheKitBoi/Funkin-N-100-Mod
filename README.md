@@ -24,7 +24,7 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 # Previews ([skip](#features))
 
 
-![Philly Nice (Hard) on Upscroll](https://cdn.discordapp.com/attachments/847017690891550740/857708720905519124/2021-06-24_2.png)
+![Philly Nice (Hard) on Upscroll](https://cdn.discordapp.com/attachments/847017690891550740/857708746562076672/2021-06-24_3.png)
 
 ![High (Hard) on Downscroll](https://cdn.discordapp.com/attachments/847017690891550740/857708720905519124/2021-06-24_2.png)
 
