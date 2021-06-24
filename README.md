@@ -74,61 +74,42 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [The contributors](https://github.com/KadeDev/Kade-Engine/graphs/contributors)
 
 ## Build instructions
+this section is just for compiling the game so u can code ur own stuff like all of the other cool mods blehblehbleh
 
-THESE INSTRUCTIONS ARE FOR COMPILING THE GAME'S SOURCE CODE!!!
+if you want to play game (N-100) normally, jus download it [here](https://drive.google.com/file/d/1LG_h55z78f1DyL5PnI06rzIK96vAylmp/view?usp=sharing)
 
-IF YOU WANT TO JUST DOWNLOAD AND INSTALL AND PLAY THE GAME NORMALLY, GO TO ITCH.IO TO DOWNLOAD THE GAME FOR PC, MAC, AND LINUX!!
+butt if you want to compile keep readin' lol!
 
-https://ninja-muffin24.itch.io/funkin
-
-IF YOU WANT TO COMPILE THE GAME YOURSELF, CONTINUE READING!!!
+(btw this is a simplified version on how to compile/still is explained and works the same way, just shortened for beginners like myself)
 
 ### Installing the Required Programs
 
-First you need to install Haxe and HaxeFlixel. I'm too lazy to write and keep updated with that setup (which is pretty simple). 
-1. [Install Haxe 4.1.5](https://haxe.org/download/version/4.1.5/) (Download 4.1.5 instead of 4.2.0 because 4.2.0 is broken and is not working with gits properly...)
+first step of this journey is to install haxe aand haxeflixel odosalzokijuagxnbhwvfcsgerb
+1. [Install Haxe 4.1.5](https://haxe.org/download/version/4.1.5/) (download HF4.1.5 instead of 4.2.0 or so forth i think because 4.2.0 is broken and is not working with gits properly...)
 2. [Install HaxeFlixel](https://haxeflixel.com/documentation/install-haxeflixel/) after downloading Haxe
+	( YOUR ANTIVIRUS OR WINDOWS DEFENDER OR SOMETHING MAY SCREW YOU OVER AND SAY ITS DANGEROUS BUT HAXE & HAXEFLIXEL ARE SAFE AND ARE **NOT** MALWARE! )
 
-Other installations you'd need is the additional libraries, a fully updated list will be in `Project.xml` in the project root. Currently, these are all of the things you need to install:
-```
-flixel
-flixel-addons
-flixel-ui
-hscript
-newgrounds
-```
-So for each of those type `haxelib install [library]` so shit like `haxelib install newgrounds`
+then you need the additional libraries, really simple to install it . fully updated list will be in `Project.xml` in project root, so this is just all of things you need to install :D
 
-You'll also need to install a couple things that involve Gits. To do this, you need to do a few things first.
-1. Download [git-scm](https://git-scm.com/downloads). Works for Windows, Mac, and Linux, just select your build.
+and basically to install it you just need your friendly ol' terminal/command prompt (to access on windows - press windows key or just open start menu and type cmd . hah) and throw these into there as is
+```
+haxelib install flixel
+haxelib install flixel-addons
+haxelib install flixel-ui
+haxelib install hscript
+haxelib install newgrounds
+```
+
+you'll also need to install a couple things that involve Gits. to do this, you need to do a few things first.
+1. Download [git-scm](https://git-scm.com/downloads). works for Windows, Mac, and Linux, just select your build.
 2. Follow instructions to install the application properly.
 3. Run `haxelib git polymod https://github.com/larsiusprime/polymod.git` to install Polymod.
-4. Run `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc` to install Discord RPC.
+4. Run `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc` to install the Discord RPC . (i think this is just game activity but i could be wrong, could be for other things too ... most likely is)
 
-You should have everything ready for compiling the game! Follow the guide below to continue!
+alright so you should have everything needed to compile, so scroll down to compile (the annoying but fun part)
 
-At the moment, you can optionally fix the transition bug in songs with zoomed out cameras.
-- Run `haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons` in the terminal/command-prompt.
-
-### Ignored files
-
-I gitignore the API keys for the game, so that no one can nab them and post fake highscores on the leaderboards. But because of that the game
-doesn't compile without it.
-
-Just make a file in `/source` and call it `APIStuff.hx`, and copy paste this into it
-
-```haxe
-package;
-
-class APIStuff
-{
-	public static var API:String = "";
-	public static var EncKey:String = "";
-}
-
-```
-
-and you should be good to go there.
+at the moment, you can optionally fix the transition bug in songs with zoomed out cameras.
+- Run `haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons` in the terminal/command-prompt (windows - press windows key or just open start menu and type cmd).
 
 ### Compiling game
 
