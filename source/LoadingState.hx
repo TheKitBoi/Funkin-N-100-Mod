@@ -26,8 +26,6 @@ class LoadingState extends MusicBeatState
 	var logo:FlxSprite;
 	var gfDance:FlxSprite;
 	var danceLeft = false;
-
-	// YOU ARE NOT COOL LOLOLOOLOLOLOLOLOLOLOLOLOLOLOL
 	
 	function new(target:FlxState, stopMusic:Bool)
 	{

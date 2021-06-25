@@ -24,7 +24,7 @@ class KadeEngineData
 			FlxG.save.data.songPosition = false;
 
 		if (FlxG.save.data.fps == null)
-			FlxG.save.data.fps = true;
+			FlxG.save.data.fps = false;
 
 		if (FlxG.save.data.changedHit == null)
 		{
@@ -39,14 +39,15 @@ class KadeEngineData
 		if (FlxG.save.data.fpsCap == null)
 			FlxG.save.data.fpsCap = 140;
 
-		if (FlxG.save.data.fpsCap > 360 || FlxG.save.data.fpsCap < 60)
-			FlxG.save.data.fpsCap = 140; // made for 144hz screens so tmm frxsty doesn't cry - trin
+		if (FlxG.save.data.fpsCap > 285 || FlxG.save.data.fpsCap < 60)
+			FlxG.save.data.fpsCap = 140; // baby proof so you can't hard lock ur copy of kade engine
+																																// LOL I SAW THIS AND STARTED DYING HAHAA -TRIN
 		
 		if (FlxG.save.data.scrollSpeed == null)
 			FlxG.save.data.scrollSpeed = 1;
 
 		if (FlxG.save.data.npsDisplay == null)
-			FlxG.save.data.npsDisplay = true;
+			FlxG.save.data.npsDisplay = false;
 
 		if (FlxG.save.data.frames == null)
 			FlxG.save.data.frames = 10;
@@ -67,7 +68,7 @@ class KadeEngineData
 			FlxG.save.data.flashing = true;
 
 		if (FlxG.save.data.resetButton == null)
-			FlxG.save.data.resetButton = true;
+			FlxG.save.data.resetButton = false;
 		
 		if (FlxG.save.data.botplay == null)
 			FlxG.save.data.botplay = false;
@@ -80,6 +81,12 @@ class KadeEngineData
 		
 		if (FlxG.save.data.customStrumLine == null)
 			FlxG.save.data.customStrumLine = 0;
+
+		if (FlxG.save.data.camzoom == null)
+			FlxG.save.data.camzoom = true;
+
+		if (FlxG.save.data.scoreScreen == null)
+			FlxG.save.data.scoreScreen = true;
 
 		Conductor.recalculateTimings();
 		PlayerSettings.player1.controls.loadKeyBinds();

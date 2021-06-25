@@ -24,6 +24,7 @@ class Section
 	 */
 	public static var COPYCAT:Int = 0;
 
+	//not leaving till it's all doen
 	public function new(lengthInSteps:Int = 16)
 	{
 		this.lengthInSteps = lengthInSteps;

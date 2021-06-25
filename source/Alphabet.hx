@@ -19,7 +19,7 @@ class Alphabet extends FlxSpriteGroup
 	public var delay:Float = 0.05;
 	public var paused:Bool = false;
 
-	// for menu shit
+	// for menu
 	public var targetY:Float = 0;
 	public var isMenuItem:Bool = false;
 
@@ -32,7 +32,7 @@ class Alphabet extends FlxSpriteGroup
 
 	var yMulti:Float = 1;
 
-	// custom shit
+	// custom crap
 	// amp, backslash, question mark, apostrophy, comma, angry faic, period
 	var lastSprite:AlphaCharacter;
 	var xPosResetted:Bool = false;
@@ -62,8 +62,6 @@ class Alphabet extends FlxSpriteGroup
 			{
 				addText();
 			}
-
-			// transfromerr
 
 		}
 	}
@@ -151,6 +149,7 @@ class Alphabet extends FlxSpriteGroup
 			if (splitWords[loopNum] == " ")
 			{
 				lastWasSpace = true;
+				// transform!!
 			}
 
 			#if (haxe >= "4.0.0")
