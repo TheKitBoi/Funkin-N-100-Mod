@@ -58,7 +58,7 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 
 ### Friday Night Funkin': N-100 Mod
 - [Trinichrys](https://instagram.com/trinichrys) - Mod Creator, Sprites, Music, Programming
-- [Rozological](https://instagram.com/) - Lead Programmer/Programming, Sprites
+- [Rozological](https://instagram.com/rozological) - Lead Programmer/Programming, Sprites
 - [nnixis](https://instagram.com/nnixis) - Sprites Management
 - [Labrrxnth](https://instagram.com/julian_nrnjo) - Mod Management/Maintainer
 - [TMM Niko](https://instagram.com/tmm_niko) - Music Sidelines, N-100 OST Record Label Enforcer (ENVYVERSE Records)
