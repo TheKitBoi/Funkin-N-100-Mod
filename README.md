@@ -74,6 +74,9 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 - [Rozebud](https://github.com/ThatRozebudDude) - Ideas (that I stole)
 - [Puyo](https://github.com/daniel11420) - Setting up appveyor and a lot of other help
 
+## N-100 GitHub/Source Details
+**Please note** that most/some information are pulled from [Kade Engine's GitHub](https://github.com/KadeDev/Kade-Engine), like AppVeyors, features, credits, etc. Compiling details are the same as is, *N-100's Kade Engine* is just our modified/custom version/build of Kade Engine, thus compiling is no different. ".FLA (flash files)" are missing due to errors with VSC not pushing staged changes correctly and Animate not saving the FLAs.. You'll have to get your FLA files elsewhere, but for N-100 they are unavailable for the time being and will probably make an appearance in future N-100 versions. *README.md* may constantly be receiving changes to add, remove or change information. If you notice any problems regarding **N-100** *(for instance, game, source, engine, etc)*, please contact me [here](https://instagram.com/trinichrys), or **@trinichrys** on *Instagram*
+
 # Building Friday Night Funkin': Kade Engine
 
 **Please note** that these instructions are for compiling/building the game. If you just want to play Kade Engine, **play in your browser or download a build instead**: **[play in browser](https://funkin.puyo.xyz) ⋅ [latest stable release](https://github.com/KadeDev/Kade-Engine/releases/latest) ⋅ [latest development build (windows)](https://ci.appveyor.com/project/KadeDev/kade-engine-windows/build/artifacts) ⋅ [latest development build (macOS)](https://ci.appveyor.com/project/daniel11420/kade-engine-macos/build/artifacts) ⋅ [latest development build (linux)](https://ci.appveyor.com/project/daniel11420/kade-engine-linux/build/artifacts)**. If you want to build the game yourself, continue reading.
