@@ -61,7 +61,7 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 - [Rozological](https://instagram.com/) - Lead Programmer/Programming, Sprites
 - [nnixis](https://instagram.com/nnixis) - Sprites Management
 - [Labrrxnth](https://instagram.com/julian_nrnjo) - Mod Management/Maintainer
-- [TMM Niko](https://instagram.com/tmm_niko) - Music Sidelines, Record Label Enforcer (ENVYVERSE Records)
+- [TMM Niko](https://instagram.com/tmm_niko) - Music Sidelines, N-100 OST Record Label Enforcer (ENVYVERSE Records)
 
 ### Kade Engine
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
