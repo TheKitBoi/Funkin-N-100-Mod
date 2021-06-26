@@ -3,14 +3,17 @@
 
 [![AppVeyor](https://img.shields.io/appveyor/build/KadeDev/Kade-Engine-Windows?label=windows%20build)](https://ci.appveyor.com/project/KadeDev/kade-engine-windows/branch/master/artifacts) [![AppVeyor](https://img.shields.io/appveyor/build/KadeDev/Kade-Engine-Macos?label=macOS%20build)](https://ci.appveyor.com/project/KadeDev/kade-engine-macos/branch/master/artifacts)  [![AppVeyor](https://img.shields.io/appveyor/build/KadeDev/Kade-Engine-Linux?label=linux%20build)](https://ci.appveyor.com/project/KadeDev/kade-engine-linux/branch/master/artifacts) [![AppVeyor](https://img.shields.io/appveyor/build/daniel11420/KadeEngineWeb?label=html5&20build)](https://ci.appveyor.com/project/daniel11420/KadeEngineWeb) [![Discord](https://img.shields.io/discord/808039740464300104?label=discord)](https://discord.gg/MG6GQFh52U) [![GitHub issues](https://img.shields.io/github/issues/KadeDev/Kade-Engine)](https://github.com/KadeDev/Kade-Engine/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/KadeDev/Kade-Engine)](https://github.com/KadeDev/Kade-Engine/pulls) []() []()
 
-![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/KadeDev/Kade-Engine/latest) ![GitHub repo size](https://img.shields.io/github/repo-size/KadeDev/Kade-Engine) ![Lines of code](https://img.shields.io/tokei/lines/github/KadeDev/Kade-Engine) ![Supported platforms](https://img.shields.io/badge/supported%20platforms-windows%2C%20macOS%2C%20linux%2C%20html5-blue) ![GitHub all releases](https://img.shields.io/github/downloads/KadeDev/Kade-Engine/total) ![GitHub](https://img.shields.io/github/license/KadeDev/Kade-Engine) ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/KadeDev/Kade-Engine?include_prereleases&label=latest%20version) 
-
-# Friday Night Funkin': Kade Engine
+# Friday Night Funkin': N-100 Mod
 ## Friday Night Funkin'
 **Friday Night Funkin'** is a rhythm game originally made for Ludum Dare 47 "Stuck In a Loop".
 
 Links: **[itch.io page](https://ninja-muffin24.itch.io/funkin) ⋅ [Newgrounds](https://www.newgrounds.com/portal/view/770371) ⋅ [source code on GitHub](https://github.com/ninjamuffin99/Funkin)**
 > Uh oh! Your tryin to kiss ur hot girlfriend, but her MEAN and EVIL dad is trying to KILL you! He's an ex-rockstar, the only way to get to his heart? The power of music... 
+
+## Friday Night Funkin': N-100 Mod
+**Friday Night Funkin': N-100 Mod** is a mod for Friday Night Funkin', bringing a full, flashy and neon style to the original game, replacing almost all of the game's assets to give you a whole new perspective of Friday Night Funkin'.
+
+Links: **[GameBanana mod page](https://gamebanana.com/gamefiles/17766)**
 
 ## Kade Engine
 **Kade Engine** is a mod for Friday Night Funkin', including a full engine rework, replays, and more.
@@ -24,24 +27,20 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 
 # Previews ([skip](#features))
 
-![Tutorial (Hard) on Downscroll](https://user-images.githubusercontent.com/15311104/113989685-fa5aea80-9850-11eb-9180-f5819a774c79.gif) ![Milf (Hard) on Downscroll](https://user-images.githubusercontent.com/15311104/113990845-2c208100-9852-11eb-8e6d-f1c9e8439871.gif)
+![Philly Nice (Hard) on Downscroll](https://cdn.discordapp.com/attachments/847017690891550740/857708746562076672/2021-06-24_3.png)
 
-![Roses (Hard) on Upscroll](https://user-images.githubusercontent.com/15311104/113993573-e31dfc00-9854-11eb-82ae-1f29dc8a0b04.png)
+![High (Hard) on Upscroll](https://cdn.discordapp.com/attachments/847017690891550740/857708720905519124/2021-06-24_2.png)
 
-![Milf (Hard) on Downscroll](https://user-images.githubusercontent.com/15311104/113991654-f4660900-9852-11eb-8c3d-f3927571f19b.png)
+![Free Play selection screen](https://cdn.discordapp.com/attachments/847017690891550740/857708761412927538/2021-06-24.png)
 
-![He malding](https://user-images.githubusercontent.com/15311104/113993693-02b52480-9855-11eb-9975-eb8a7a1be8d1.png)
+![Options Menu](https://cdn.discordapp.com/attachments/847017690891550740/857708782120337458/2021-06-24_4.png)
 
-![Free Play selection screen](https://i.imgur.com/LR0eWIC.png)
-
-![Options Menu](https://i.imgur.com/LBXW9C1.png)
-
-# Features
+# Kade Engine Features
 
  - **New Input System**
 	 - An improved input system, similar to Quaver or Etterna, with less delays, less dropped inputs and other improvements.
- - **More information during gameplay**
-	 - While you're playing, we show you information about how you're doing, such as your accuracy, combo break count, notes per second, and your grade/rating.
+ - **More gameplay information**
+	 - While you're playing, we show you information about how you're doing, such as your accuracy, combo break (miss) count, notes per second, and your grade/rating.
  - **Customizable keybinds**
 	 - Instead of being forced to use WASD and the arrow keys, you can customize the keybinds to any keys you want!
  - **Replays** (in beta)
@@ -53,16 +52,24 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 # Credits
 ### Friday Night Funkin'
  - [ninjamuffin99](https://twitter.com/ninja_muffin99) - Programming
- - [PhantomArcade3K](https://twitter.com/phantomarcade3k) and [Evilsk8r](https://twitter.com/evilsk8r) - Art
- - [Kawai Sprite](https://twitter.com/kawaisprite) - Music
+ - [PhantomArcade3K](https://twitter.com/phantomarcade3k) - Animation
+	- [Evilsk8r](https://twitter.com/evilsk8r) - Art
+ - [KawaiSprite](https://twitter.com/kawaisprite) - Music
 
-This game was made with love to Newgrounds and its community. Extra love to Tom Fulp.
+### Friday Night Funkin': N-100 Mod
+- [Trinichrys](https://instagram.com/trinichrys) - Mod Creator, Sprites, Music, Programming
+- [Rozological](https://instagram.com/) - Lead Programmer/Programming, Sprites
+- [nnixis](https://instagram.com/nnixis) - Sprites Management
+- [Labrrxnth](https://instagram.com/julian_nrnjo) - Mod Management/Maintainer
+- [TMM Niko](https://instagram.com/tmm_niko) - Music Sidelines, Record Label Enforcer (ENVYVERSE Records)
+
 ### Kade Engine
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
 - [The contributors](https://github.com/KadeDev/Kade-Engine/graphs/contributors)
 
+This game was made with love to Newgrounds and its community. Extra love to Tom Fulp.
 
-### Shoutouts
+### Kade Engine Shoutouts
 - [GWebDev](https://github.com/GrowtopiaFli) - Video Code
 - [Rozebud](https://github.com/ThatRozebudDude) - Ideas (that I stole)
 - [Puyo](https://github.com/daniel11420) - Setting up appveyor and a lot of other help
