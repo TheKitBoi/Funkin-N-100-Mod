@@ -51,10 +51,10 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 
 # Credits
 ### Friday Night Funkin'
- - [ninjamuffin99](https://twitter.com/ninja_muffin99) - Programming
- - [PhantomArcade3K](https://twitter.com/phantomarcade3k) - Animation
-	- [Evilsk8r](https://twitter.com/evilsk8r) - Art
- - [KawaiSprite](https://twitter.com/kawaisprite) - Music
+- [ninjamuffin99](https://twitter.com/ninja_muffin99) - Programming
+- [PhantomArcade3K](https://twitter.com/phantomarcade3k) - Animation
+- [Evilsk8r](https://twitter.com/evilsk8r) - Art
+- [KawaiSprite](https://twitter.com/kawaisprite) - Music
 
 ### Friday Night Funkin': N-100 Mod
 - [Trinichrys](https://instagram.com/trinichrys) - Mod Creator, Sprites, Music, Programming
