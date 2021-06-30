@@ -75,7 +75,7 @@ class Replay
 		#if sys
 		File.saveContent("assets/replays/replay-" + PlayState.SONG.song + "-time" + time + ".kadeReplay", data);
 
-		path = "replay-" + PlayState.SONG.song + "-time" + time + ".kadeReplay"; // for score screen shit
+		path = "replay-" + PlayState.SONG.song + "-time" + time + ".kadeReplay"; // for score screen stuff
 
 		LoadFromJSON();
 		#end

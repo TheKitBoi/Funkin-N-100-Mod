@@ -58,32 +58,40 @@ class Paths
 	inline static public function lua(key:String,?library:String)
 	{
 		return getPath('data/$key.lua', TEXT, library);
+		// LUA SHIS
 	}
 
 	inline static public function luaImage(key:String, ?library:String)
 	{
 		return getPath('data/$key.png', IMAGE, library);
+		// PNG OBJ
 	}
 
 	inline static public function txt(key:String, ?library:String)
 	{
 		return getPath('data/$key.txt', TEXT, library);
+		// TXT THING only for frames im sure, somewhat readme
 	}
 
 	inline static public function xml(key:String, ?library:String)
 	{
 		return getPath('data/$key.xml', TEXT, library);
+		// for FlxSprite sprite thing im sure and whatever xmls used else in funkin
 	}
 
 	inline static public function video(key:String, ?library:String)
 	{
 		return getPath('videos/$key.webm', TEXT, library);
+		// webm keys
 	}
 
 	inline static public function json(key:String, ?library:String)
 	{
 		return getPath('data/$key.json', TEXT, library);
+		// chart thing
 	}
+
+ // <!--PATH THING FROM HERE DOWN LOL!--!>
 
 	static public function sound(key:String, ?library:String)
 	{

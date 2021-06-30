@@ -26,7 +26,7 @@ class Main extends Sprite
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
 
-	public static var watermarks = true; // Whether to put Kade Engine liteartly anywhere
+	public static var watermarks = true; // Whether to put Kade Engine literally anywhere (corrected by trin, kade learn math n spellin broski)
 
 	// You can pretty much ignore everything from here on - your code should go in your states.
 
@@ -85,6 +85,7 @@ class Main extends Sprite
 		addChild(game);
 
 		var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
+		// actually dont del it cuz it wont work lol
 
 		#if web
 		var str1:String = "HTML CRAP";
