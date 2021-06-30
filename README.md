@@ -35,7 +35,7 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 
 ![Options Menu](https://cdn.discordapp.com/attachments/847017690891550740/857708782120337458/2021-06-24_4.png)
 
-![raid shadow legtdnehbdgds](https://tenor.com/view/abw-a-bizarre-world-syaba-evil-lexann-gif-19135876)
+![raid shadow legtdnehbdgds](![tenor](https://user-images.githubusercontent.com/81063954/124009877-1da6b900-d9ac-11eb-8df6-066895a1749d.gif)
 
 # Kade Engine Features
 
