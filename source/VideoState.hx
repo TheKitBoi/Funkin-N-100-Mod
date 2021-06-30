@@ -1,5 +1,3 @@
-//do not use this unstable junk
-/*
 package;
 
 import flixel.FlxState;
@@ -21,7 +19,7 @@ using StringTools;
 class VideoState extends MusicBeatState
 {
 	public var leSource:String = "";
-	//public var transClass:FlxState;
+	public var transClass:FlxState;
 	public var transFunction:Void->Void;
 	public var txt:FlxText;
 	public var fuckingVolume:Float = 1;
@@ -40,7 +38,6 @@ class VideoState extends MusicBeatState
 		super();
 		
 		leSource = source;
-		//transClass = toTrans;
 		transFunction = toTrans;
 	}
 	
@@ -95,30 +92,31 @@ class VideoState extends MusicBeatState
 		if (GlobalVideo.isWebm)
 		{
 			GlobalVideo.get().restart();
-		} else {
+		} 
+  {	
 			GlobalVideo.get().play();
-		}*/
+		}
 		
-		/*if (useSound)
-		{*/
-			//vidSound = FlxG.sound.play(leSource.replace(".webm", ".ogg"));
+		if (useSound)
+		{
+			vidSound = FlxG.sound.play(leSource.replace(".webm", ".ogg"));
 		
-			/*new FlxTimer().start(0.1, function(tmr:FlxTimer)
-			{*/
-				//vidSound.time = vidSound.length * soundMultiplier;
-				/*new FlxTimer().start(1.2, function(tmr:FlxTimer)
+			new FlxTimer().start(0.1, function(tmr:FlxTimer)
+			{
+			vidSound.time = vidSound.length * soundMultiplier;
+				new FlxTimer().start(1.2, function(tmr:FlxTimer)
 				{
 					if (useSound)
 					{
 						vidSound.time = vidSound.length * soundMultiplier;
 					}
-				}, 0);*/
-				//doShit = true;
-			//}, 1);
-		//}
-	//}
+				}, 0);
+				doShit = true;
+			}, 1);
+		}
+	}
 	
-	/*override function update(elapsed:Float)
+	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
 		
@@ -154,9 +152,9 @@ class VideoState extends MusicBeatState
 				if (prevSoundMultiplier == 0)
 				{
 					vidSound.resume();
-					vidSound.time = vidSound.length * soundMultiplier;
-				}
-			}
+					vidSound.time = vidSound.length;
+				};
+			};
 			prevSoundMultiplier = soundMultiplier;
 			}
 		}
@@ -199,7 +197,7 @@ class VideoState extends MusicBeatState
 			FlxG.sound.music.volume = fuckingVolume;
 			txt.text = pauseText;
 			FlxG.autoPause = true;
-			//FlxG.switchState(transClass);
+			FlxG.switchState(transClass);
 			transFunction();
 		}
 		
@@ -213,4 +211,4 @@ class VideoState extends MusicBeatState
 		GlobalVideo.get().stopped = false;
 		GlobalVideo.get().ended = false;
 	}
-}*/
+}

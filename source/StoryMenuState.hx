@@ -306,6 +306,7 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
+				// FlxG.switchState(new VideoState('assets/videos/klaskiiTitle.mp4', new PlayState(Void)));
 				LoadingState.loadAndSwitchState(new PlayState(), true);
 			});
 		}
