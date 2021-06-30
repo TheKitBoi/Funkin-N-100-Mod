@@ -1,4 +1,4 @@
-//do not use this unstable shit
+//do not use this unstable junk
 /*
 package;
 

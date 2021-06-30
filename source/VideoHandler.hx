@@ -71,7 +71,8 @@ class VideoHandler
 	public function netStream_onAsyncError (event:AsyncErrorEvent):Void {
 		
 		trace ("Error loading video");
-		
+		// thing?
+
 	}
 	
 	
