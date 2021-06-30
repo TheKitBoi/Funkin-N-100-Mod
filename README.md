@@ -77,6 +77,9 @@ This game was made with love to Newgrounds and its community. Extra love to Tom 
 ## N-100 GitHub/Source Details
 **Please note** that most/some information are pulled from [Kade Engine's GitHub](https://github.com/KadeDev/Kade-Engine), like AppVeyors, features, credits, etc. Compiling details are the same as is, *N-100's Kade Engine* is just our modified/custom version/build of Kade Engine, thus compiling is no different. ".FLA (flash files)" are missing due to errors with VSC not pushing staged changes correctly and Animate not saving the FLAs.. You'll have to get your FLA files elsewhere, but for N-100 they are unavailable for the time being and will probably make an appearance in future N-100 versions. *README.md* may constantly be receiving changes to add, remove or change information. If you notice any problems regarding **N-100** *(for instance, game, source, engine, etc)*, please contact me [here](https://instagram.com/trinichrys), or **@trinichrys** on *Instagram*
 
+## Dev Notes/Development Info
+This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnixis using multiple applications such as [MS Visual Studio Code](https://code.visualstudio.com/) for programming n' stuff, [Adobe Animate CC](https://www.adobe.com/products/animate.html) for re-animating characters and other assets (soon, maybe..), also that and [Krita](https://krita.org/en/) and [PicsArt](https://picsart.com/?utm_source=google&utm_medium=ppc&utm_campaign=13463806978&adgroupid=122958157866&utm_term=&gclid=CjwKCAjwzruGBhBAEiwAUqMR8G5saKRZ9yl604pnGAL1mOheiBcwmHwn4MNhX2epgi-CT2zMuUK6PxoCrLoQAvD_BwE) for recoloring, 10/10 for both, love both, need both, love love love. OH AND I ALSO USED THIS [HEX COLOR PICKER](https://imagecolorpicker.com/) CUS I NEEDED IT TO GET THE COLORS FROM THE SPRITES INTO ADOBE ANIMATE LOL! [GarageBand](https://www.apple.com/mac/garageband/) ([heres the mobile one which is exactly the one i used](https://apps.apple.com/us/app/garageband/id408709785)) to remix the OST (very badly lol), I love it too much.. even over FLS. (never tried so can't assume yet).. don't slander me........ The source code finally thrown up on [GITHUB](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master) (this current page lol), WOWZERS.. Go check it out., and also the source code does NOT have the ".fla" files, explained in source details, but they will be soon enough. The whole OST has been uploaded onto [SoundCloud](https://soundcloud.com/envy529/sets/fnf-n-100-beta-mod-ost) ([YouTube](https://www.youtube.com/channel/UCzKYQzsylnZybZgnyVOWPvQ) soon, looking for more platforms), so go check it out, sometimes SoundCloud receives the new music first THEN the mod receives it, sometimes other way 'round.. idk man.. and sometimes we forget to do patch notes in readme file.. cry. Shoutouts to uh my dog, Lulu.. to [Newgrounds](https://www.newgrounds.com/), always [Newgrounds](https://trinichrys.newgrounds.com/), forever [Newgrounds](https://trinichrys.newgrounds.com/), shoutouts to my mother and father, hi parents, shoutouts toooooooo [BIDDLE3](https://twitter.com/TheBiddleMoment), AFTER SEEING [B3 MOD](https://gamebanana.com/mods/42734) I WANTED TO MAKE [N-100](https://gamebanana.com/mods/44357) AND NEVER WOULD OF KNEW THE JOY OF MOD MAKING IF IT WEREN'T FOR HIM, LOVE [BIDDLE3](https://twitter.com/TheBiddleMoment)!!!!!! Yeah, that's pretty much it, I'm going to bed now.
+
 # Building Friday Night Funkin': Kade Engine
 
 **Please note** that these instructions are for compiling/building the game. If you just want to play Kade Engine, **play in your browser or download a build instead**: **[play in browser](https://funkin.puyo.xyz) ⋅ [latest stable release](https://github.com/KadeDev/Kade-Engine/releases/latest) ⋅ [latest development build (windows)](https://ci.appveyor.com/project/KadeDev/kade-engine-windows/build/artifacts) ⋅ [latest development build (macOS)](https://ci.appveyor.com/project/daniel11420/kade-engine-macos/build/artifacts) ⋅ [latest development build (linux)](https://ci.appveyor.com/project/daniel11420/kade-engine-linux/build/artifacts)**. If you want to build the game yourself, continue reading.
@@ -150,5 +153,157 @@ Finally, we are ready to build.
 - The build will be in `Kade-Engine/export/<target>/bin`, with `<target>` being the target you built to in the previous step. (i.e. `Kade-Engine/export/windows/bin`)
 - Only the `bin` folder is necessary to run the game. The other ones in `export/<target>` are not.
 
-## Dev Notes/Development Info
-This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnixis using multiple applications such as [MS Visual Studio Code](https://code.visualstudio.com/) for programming n' stuff, [Adobe Animate CC](https://www.adobe.com/products/animate.html) for re-animating characters and other assets (soon, maybe..), also that and [Krita](https://krita.org/en/) and [PicsArt](https://picsart.com/?utm_source=google&utm_medium=ppc&utm_campaign=13463806978&adgroupid=122958157866&utm_term=&gclid=CjwKCAjwzruGBhBAEiwAUqMR8G5saKRZ9yl604pnGAL1mOheiBcwmHwn4MNhX2epgi-CT2zMuUK6PxoCrLoQAvD_BwE) for recoloring, 10/10 for both, love both, need both, love love love. OH AND I ALSO USED THIS [HEX COLOR PICKER](https://imagecolorpicker.com/) CUS I NEEDED IT TO GET THE COLORS FROM THE SPRITES INTO ADOBE ANIMATE LOL! [GarageBand](https://www.apple.com/mac/garageband/) ([heres the mobile one which is exactly the one i used](https://apps.apple.com/us/app/garageband/id408709785)) to remix the OST (very badly lol), I love it too much.. even over FLS. (never tried so can't assume yet).. don't slander me........ The source code finally thrown up on [GITHUB](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master) (this current page lol), WOWZERS.. Go check it out., and also the source code does NOT have the ".fla" files, explained in source details, but they will be soon enough. The whole OST has been uploaded onto [SoundCloud](https://soundcloud.com/envy529/sets/fnf-n-100-beta-mod-ost) ([YouTube](https://www.youtube.com/channel/UCzKYQzsylnZybZgnyVOWPvQ) soon, looking for more platforms), so go check it out, sometimes SoundCloud receives the new music first THEN the mod receives it, sometimes other way 'round.. idk man.. and sometimes we forget to do patch notes in readme file.. cry. Shoutouts to uh my dog, Lulu.. to [Newgrounds](https://www.newgrounds.com/), always [Newgrounds](https://trinichrys.newgrounds.com/), forever [Newgrounds](https://trinichrys.newgrounds.com/), shoutouts to my mother and father, hi parents, shoutouts toooooooo [BIDDLE3](https://twitter.com/TheBiddleMoment), AFTER SEEING [B3 MOD](https://gamebanana.com/mods/42734) I WANTED TO MAKE [N-100](https://gamebanana.com/mods/44357) AND NEVER WOULD OF KNEW THE JOY OF MOD MAKING IF IT WEREN'T FOR HIM, LOVE [BIDDLE3](https://twitter.com/TheBiddleMoment)!!!!!! Yeah, that's pretty much it, I'm going to bed now.
+
+# GWebDev FNF Video (WEBM) Code
+This is GWebDev's research on how to play videos in openfl haxeflixel (webm only supported)
+# How To Setup
+BEFORE SETUP apologies to benlonghair the war has ended ok so \
+(btw this is for `Friday Night Funkin`)
+1. Download the Friday Night Funkin source code in https://github.com/ninjamuffin99/Funkin and follow `EVERYTHING` (including the git part which is very important) (make sure its the new file system otherwise you need to put extra code `which i have the solution for lol`)
+2. Install actuate by doing `haxelib install actuate`
+3. Install the extension-webm fork by doing `haxelib git extension-webm https://github.com/GrowtopiaFli/extension-webm`
+4. It won't work lol so type the command `lime rebuild extension-webm [windows/mac/linux]` (depends on your device)
+(sry idk how to fix this for mac)
+5. Download the zip of this repository and copy paste the files inside the `source` folder to your fnf source code's `source` folder
+6. Edit the `Main.hx` file in the fnf source code \
+Then add after the code
+```js
+addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, updateframerate, drawframerate, skipSplash, startFullscreen));
+```
+And before code
+```js
+#if !mobile
+addChild(new FPS(10, 3, 0xFFFFFF));
+#end
+```
+The code
+```js
+var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
+
+#if web
+var str1:String = "HTML CRAP";
+var vHandler = new VideoHandler();
+vHandler.init1();
+vHandler.video.name = str1;
+addChild(vHandler.video);
+vHandler.init2();
+GlobalVideo.setVid(vHandler);
+vHandler.source(ourSource);
+#elseif desktop
+var str1:String = "WEBM SHIT"; 
+var webmHandle = new WebmHandler();
+webmHandle.source(ourSource);
+webmHandle.makePlayer();
+webmHandle.webm.name = str1;
+addChild(webmHandle.webm);
+GlobalVideo.setWebm(webmHandle);
+#end
+```
+So it would look something like
+```js
+addChild(new FlxGame(gameWidth, gameHeight, initialState, zoom, updateframerate, drawframerate, skipSplash, startFullscreen));
+		
+var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
+		
+#if web
+var str1:String = "HTML CRAP";
+var vHandler = new VideoHandler();
+vHandler.init1();
+vHandler.video.name = str1;
+addChild(vHandler.video);
+vHandler.init2();
+GlobalVideo.setVid(vHandler);
+vHandler.source(ourSource);
+#elseif desktop
+var str1:String = "WEBM SHIT"; 
+var webmHandle = new WebmHandler();
+webmHandle.source(ourSource);
+webmHandle.makePlayer();
+webmHandle.webm.name = str1;
+addChild(webmHandle.webm);
+GlobalVideo.setWebm(webmHandle);
+#end
+
+#if !mobile
+addChild(new FPS(10, 3, 0xFFFFFF));
+#end
+```
+# Setting up `Project.xml`
+1. Edit `Project.xml` in the fnf source code
+2. Find the section with `<haxelib name="etc" />`
+3. Add these two extra lines
+```xml
+<haxelib name="actuate" />
+<haxelib name="extension-webm" if="desktop" />
+```
+4. `FOLLOW THIS 4TH STEP ONLY IF YOUR USING THE OLD FILE SYSTEM`
+In the section with `<assets path="bla">` \
+Add these two lines
+```xml
+<assets path="assets/videos" include="*.mp3" if="web"/>
+<assets path="assets/videos" include="*.ogg" unless="web"/>
+```
+5. If your in the new file system \
+Create a new folder named `videos` inside assets/preload \
+If your in the old file system \
+Create a new folder named `videos` inside assets
+6. Paste the `DO NOT DELETE OR GAME WILL CRASH` folder inside the videos folder (either assets/preload/videos or assets/videos `SOURCE CODE SPECIFIC`) if you don't you know what happens, game crashes.
+# Setting up the desktop build
+For all you windows users out there
+You need to do an extra step
+You must know how to use cmd or `Command Prompt` or `Terminal` for mac or something idk i don't have a mac \
+(sorry but this is only for `64 bit` architectures)
+1. Download ffmpeg
+https://github.com/BtbN/FFmpeg-Builds/releases (please download the gpl shared version there is also download for mac please download ffprobe: https://evermeet.cx/ffmpeg)
+2. Extract the zip file to your choice
+3. Go inside the `bin` folder inside the extracted zip file
+4. Open `Command Prompt`
+5. Change directory inside the `bin` folder
+6. `More on this later`
+# Understanding of how video works
+As you know, this only supports `webm` video files not `mp4` or `any other file type` \
+The reasoning of this is because of the different types of codecs not embedded inside openfl \
+Let me give an explanation \
+`Video Files` require a `codec` \
+a codec is an `encoder` or a `decoder` for video files \
+You `CANNOT` compress video files to a smaller size in modern times because they are already `COMPRESSED` and that is why we have `codecs` so you can't push the limit \
+OpenFL has no codec embedded into it that's why someone who made `openfl-webm` coded the webm codec from scratch using `c++` for haxe/openfl \
+But if you will ask `Why does it work for html?` \
+It's because when it comes to html the `BROWSER` has the codec \
+If you were to do it Natively `Native means an application that uses the system's commands instead of depending on other software like browsers which is for html5`, there are no codecs built into it. \
+Now if you were to ask `Why is it named extension-webm if it was openfl-webm then?` It's because `openfl-webm` is ancient and broken so someone made `extension-webm` to fix it: https://github.com/HaxeExtension/extension-webm \
+Now if you were to ask `Then why did i install https://github.com/GrowtopiaFli/extension-webm instead of https://github.com/HaxeExtension/extension-webm then?` It's because i added some extra code in `WebmPlayer.hx` to fix memory leaks. \
+Now if you were to ask `What are memory leaks?` well a memory leak is a thing wherein the memory is stuffed and not freed, in basic terms, your `RAM` processes more data. \
+Why you ask? it's because the video isn't being replaced but keep being added each time. \
+How did i fix this issue you asked? i added extra code to `WebmPlayer.hx` which allows you to change the `SOURCE VIDEO` of the webm player anytime.
+# Solution for the desktop build
+Now how will we setup the video on desktop? \
+Well in webm player there is `NO` audio support because it's broken lol so now we are in trouble but do not worry because ffmpeg is here to save us. \
+My solution is to `Audio Sync` a way of Synchronizing the audio version of the video to the video `You must have an ogg file either just the video's audio or just empty audio that lasts as long as the video's time (i made a solution so if you don't have audio on your video then just don't make an ogg file)`. \
+So back to that ffmpeg change directory folder is a ffprobe command template i have
+```cmd
+ffprobe -v error -count_frames -select_streams v:0 -show_entries stream=nb_read_frames -of default=nokey=1:noprint_wrappers=1 "yourvideo.mp4"
+```
+Ok so my recommendation is to Convert your video to webm then convert that webm to an mp4 because sometimes there are frame losses to webm files which fails the `Audio Sync`. \
+This command logs the number of frames your video has and now you may ask. \
+`If i have to convert webm to an mp4 because of frame loss for ffprobe why the hell can't i just input the webm file?` Well it's because ffprobe cannot detect the frame numbers in your webm files so you have to use a different format. \
+Now you may ask `What am i suppose to do with the frame numbers?` You have to make your video name first. \
+Let me give a video name sample of `video`. \
+Now inside the videos folder in either `assets/preload/videos` or `assets/videos` `(SOURCE CODE SPECIFIC)` if the video name is `video` then make a file called `video.txt` and put the frame numbers there as easy as that. \
+2. put your webm file in so it will be `video.webm` \
+3. put the ogg converted file in so it will be `video.ogg` \
+`IMPORTANT NOTE THAT THERE ARE DIFFERENT CODECS FOR WEBM FILES THE SPECIFIC ONE IS VP8 WHILE VP9 AND OTHERS AREN'T SUPPORTED`
+# Usage of the player
+You can edit `VideoState.hx` all you want but the usage of the `VideoState` class is pretty simple. \
+The return must be a new class but i made a separate `VideoState.hx` file inside the `function` folder in this repository to change the callback to a function.
+```js
+FlxG.switchState(new VideoState('assets/videos/yoursourcevideo.webm', new YourClass(), your frameskip limit which you can leave blank or put a frameskip limit you can fill this parameter voluntarily and it must be an integer not a decimal, [true/false] (if it is true, the music playing will automatically be paused, this is good for midway videos while playing or idk for pausing the game and showing the video cutscene)));
+```
+YourClass is your callback class which is called once the video ends so you put your own logic idk \
+Frameskip limit should be an integer not a decimal \
+enter true or false for music auto pause and resume \
+WARNING WARNING! function is very unstable and won't work do not copy the contents of the `function` folder please and also you make your own class with code or something idk i won't be your coding teacher ask kadedev or something idk
+# End of the document
+Thank you for taking your time to read the entire repository ReadMe file. \
+This is the end of the document i hope you understood everything i wrote for you to play videos in `Friday Night Funkin`. \
+Support the kickstarter here: https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game

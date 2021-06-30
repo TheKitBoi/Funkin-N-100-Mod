@@ -15,7 +15,7 @@ class Boyfriend extends Character
 	{
 		super(x, y, char, true);
 	}
-
+ // juli rocks
 	override function update(elapsed:Float)
 	{
 		if (!debugMode)

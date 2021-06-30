@@ -70,8 +70,7 @@ class VideoHandler
 	
 	public function netStream_onAsyncError (event:AsyncErrorEvent):Void {
 		
-		trace ("Error occured while loading video.");
-		// webm sucks ;/ mp4 > webm
+		trace ("Error loading video");
 		
 	}
 	

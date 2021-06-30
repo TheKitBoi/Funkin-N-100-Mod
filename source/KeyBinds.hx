@@ -19,7 +19,6 @@ class KeyBinds
         FlxG.save.data.leftBind = "A";
         FlxG.save.data.rightBind = "D";
         FlxG.save.data.killBind = "R";
-        // killbind = instant game over
         PlayerSettings.player1.controls.loadKeyBinds();
 
 	}
@@ -28,24 +27,23 @@ class KeyBinds
     {
         if(FlxG.save.data.upBind == null){
             FlxG.save.data.upBind = "W";
-            trace("null");
-            // null is no bind / applies to every bind, including killbind
+            trace("No UP");
         }
         if(FlxG.save.data.downBind == null){
             FlxG.save.data.downBind = "S";
-            trace("null");
+            trace("No DOWN");
         }
         if(FlxG.save.data.leftBind == null){
             FlxG.save.data.leftBind = "A";
-            trace("null");
+            trace("No LEFT");
         }
         if(FlxG.save.data.rightBind == null){
             FlxG.save.data.rightBind = "D";
-            trace("null");
+            trace("No RIGHT");
         }
         if(FlxG.save.data.killBind == null){
             FlxG.save.data.killBind = "R";
-            trace("null");
+            trace("No KILL");
         }
     }
 
