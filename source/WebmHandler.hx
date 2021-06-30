@@ -163,7 +163,7 @@ class WebmHandler
 	public var webm:Sprite;
 	public function new()
 	{
-	trace("THIS IS ANDROID! or some shit...");
+	trace("THIS IS ANDROID! or smth...");
 	}
 	#end
 }
