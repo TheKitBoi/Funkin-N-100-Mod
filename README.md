@@ -35,6 +35,8 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 
 ![Options Menu](https://cdn.discordapp.com/attachments/847017690891550740/857708782120337458/2021-06-24_4.png)
 
+![raid shadow legtdnehbdgds](https://tenor.com/view/abw-a-bizarre-world-syaba-evil-lexann-gif-19135876)
+
 # Kade Engine Features
 
  - **New Input System**
