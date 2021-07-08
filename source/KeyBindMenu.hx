@@ -62,7 +62,6 @@ class KeyBindMenu extends FlxSubState
                 keys[i] = defaultKeys[i];
         }
 	
-		//FlxG.sound.playMusic('assets/music/configurator' + TitleState.soundExt);
 
 		persistentUpdate = persistentDraw = true;
 
