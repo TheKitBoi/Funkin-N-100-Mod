@@ -3300,6 +3300,7 @@ class PlayState extends MusicBeatState
 					add(dad);
 			
 					trace('poggers');
+					//what
 			
 					if (!songStarted)
 						webmHandler.pause();
@@ -3443,7 +3444,7 @@ class PlayState extends MusicBeatState
 				}
 				else if (mashViolations > 2)
 				{
-					// this is bad but fuck you
+					// this is bad but whatever
 					playerStrums.members[0].animation.play('static');
 					playerStrums.members[1].animation.play('static');
 					playerStrums.members[2].animation.play('static');
@@ -3520,7 +3521,7 @@ class PlayState extends MusicBeatState
 						var array = [note.strumTime,note.sustainLength,note.noteData,noteDiff];
 						if (note.isSustainNote)
 							array[1] = -1;
-						trace('pushing ' + array[0]);
+						trace('note ' + array[0]);
 						saveNotes.push(array);
 					}
 					
@@ -3721,7 +3722,8 @@ class PlayState extends MusicBeatState
 		if (FlxG.save.data.camzoom)
 		{
 			// HARDCODING FOR MILF ZOOMS!
-			if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.35)
+			if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.5)
+				//increase camera zoom
 			{
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.03;
@@ -3790,7 +3792,7 @@ class PlayState extends MusicBeatState
 			case "philly":
 				if(FlxG.save.data.distractions){
 					if (!trainMoving)
-						trainCooldown += 1;
+						trainCooldown += 0;
 	
 					if (curBeat % 4 == 0)
 					{
