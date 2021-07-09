@@ -10,6 +10,7 @@ import flixel.addons.transition.TransitionData;
 import flixel.graphics.FlxGraphic;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.group.FlxGroup;
+import flixel.input.gamepad.FlxGamepad;
 import flixel.math.FlxPoint;
 import flixel.math.FlxRect;
 import flixel.system.FlxSound;
@@ -22,7 +23,7 @@ import flixel.util.FlxTimer;
 import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
-import polymod.Polymod;
+//import polymod.Polymod;
 
 using StringTools;
 
@@ -58,8 +59,10 @@ class TitleState extends MusicBeatState
 				StoryMenuState.weekUnlocked[0] = true;
 		}
 
+		KeyBinds.keyCheck();
 		PlayerSettings.init();
 
+		Main.fpsDisplay.visible = true;
 
 		startIntro();
 	}
@@ -104,6 +107,7 @@ class TitleState extends MusicBeatState
 		// titleText.screenCenter(X);
 		add(titleText);
 
+		skipIntro();
 	}
 
 	var transitioning:Bool = false;
@@ -119,6 +123,22 @@ class TitleState extends MusicBeatState
 				FlxG.fullscreen = !FlxG.fullscreen;
 			}
 
+			var pressedEnter:Bool = FlxG.keys.justPressed.ENTER;
+
+			var gamepad:FlxGamepad = FlxG.gamepads.lastActive;
+
+			if (gamepad != null)
+			{
+				if (gamepad.justPressed.START)
+					pressedEnter = true;
+
+				#if switch
+				if (gamepad.justPressed.B)
+					pressedEnter = true;
+				#end
+			}
+
+			if (pressedEnter && !transitioning && skippedIntro)
 			{
 				titleText.animation.play('press');
 
@@ -133,7 +153,7 @@ class TitleState extends MusicBeatState
 					// Check if version is outdated
 					FlxG.switchState(new MainMenuState());
 				});
-			 FlxG.sound.play('assets/music/titleShoot' + TitleState.soundExt, 0.7);
+				// FlxG.sound.play('assets/music/titleShoot' + TitleState.soundExt, 0.7);
 			}
 		}
 
@@ -153,5 +173,18 @@ class TitleState extends MusicBeatState
 			gfDance.animation.play('danceLeft', true);
 
 		FlxG.log.add(curBeat);
-	};
+	}
+
+	var skippedIntro:Bool = false;
+
+	function skipIntro():Void
+	{
+		if (!skippedIntro)
+		{
+			FlxG.camera.flash(FlxColor.WHITE, 1);
+			PlayerSettings.player1.controls.loadKeyBinds();
+			Config.configCheck();
+			skippedIntro = true;
+		}
+	}
 }
