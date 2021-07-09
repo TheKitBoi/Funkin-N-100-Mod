@@ -30,11 +30,12 @@ class StoryMenuState extends MusicBeatState
 		['Pico', 'Philly Nice', "Blammed"],
 		['Satin Panties', "High", "Milf"],
 		['Cocoa', 'Eggnog', 'Winter Horrorland'],
-		['', '', '']
+		['', '', ''],
+	 //	['Mother']
 	];
 	var curDifficulty:Int = 1;
 
-	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, false];
+	public static var weekUnlocked:Array<Bool> = [true, true, true, true, true, true, false, true];
 
 	var weekCharacters:Array<Dynamic> = [
 		['', 'bf', 'gf'],
@@ -43,7 +44,8 @@ class StoryMenuState extends MusicBeatState
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
 		['parents-christmas', 'bf', 'gf'],
-		['', 'bf', 'gf']
+		['', '', ''],
+  // ['mom', 'bf', 'gf']
 	];
 
 	var weekNames:Array<String> = [
@@ -53,7 +55,8 @@ class StoryMenuState extends MusicBeatState
 		"PHILIDELPHIA",
 		"INTERSTATE 69",
 		"LUSH ICE",
-		"In Development"
+		"In Development",
+		// "Vibe Zone Expressway"
 	];
 
 	var txtWeekTitle:FlxText;
@@ -306,7 +309,6 @@ class StoryMenuState extends MusicBeatState
 			PlayState.campaignScore = 0;
 			new FlxTimer().start(1, function(tmr:FlxTimer)
 			{
-				// FlxG.switchState(new VideoState('assets/videos/klaskiiTitle.mp4', new PlayState(Void)));
 				LoadingState.loadAndSwitchState(new PlayState(), true);
 			});
 		}
@@ -384,7 +386,7 @@ class StoryMenuState extends MusicBeatState
 		grpWeekCharacters.members[1].setCharacter(weekCharacters[curWeek][1]);
 		grpWeekCharacters.members[2].setCharacter(weekCharacters[curWeek][2]);
 
-		txtTracklist.text = "Tracks\n";
+		txtTracklist.text = "Featuring:\n";
 		var stringThing:Array<String> = weekData[curWeek];
 
 		for (i in stringThing)
