@@ -51,7 +51,7 @@ class Caching extends MusicBeatState
         add(kadeLogo);
         add(text);
 
-        trace('Preparing cache checks...');
+        trace('Preparing preload process...');
         
         sys.thread.Thread.create(() -> {
             cache();
@@ -120,7 +120,7 @@ class Caching extends MusicBeatState
             done++;
         }
 
-        trace("Cache checks complete!");
+        trace("PRELOAD complete!");
 
         FlxG.switchState(new TitleState());
     }
