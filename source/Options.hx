@@ -584,7 +584,7 @@ class WatermarkOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return "Watermarks " + (Main.watermarks ? "on" : "off");
+		 // return "Watermarks " + (Main.watermarks ? "on" : "off");
 	}
 }
 
