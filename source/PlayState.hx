@@ -3078,7 +3078,7 @@ class PlayState extends MusicBeatState
 									{
 										if (coolNote.noteData == daNote.noteData && Math.abs(daNote.strumTime - coolNote.strumTime) < 10)
 										{ // if it's the same note twice at < 10ms distance, just delete it
-											// EXCEPT u cant delete it in this loop cuz it fucks with the collection lol
+											// EXCEPT u cant delete it in this loop cuz it messes with the collection lol
 											dumbNotes.push(daNote);
 											break;
 										}
@@ -3101,7 +3101,7 @@ class PlayState extends MusicBeatState
 
 					for (note in dumbNotes)
 					{
-						FlxG.log.add("killing dumb ass note at " + note.strumTime);
+						FlxG.log.add("killing dumb note at " + note.strumTime);
 						note.kill();
 						notes.remove(note, true);
 						note.destroy();
@@ -3300,7 +3300,6 @@ class PlayState extends MusicBeatState
 					add(dad);
 			
 					trace('poggers');
-					//what
 			
 					if (!songStarted)
 						webmHandler.pause();
@@ -3444,7 +3443,7 @@ class PlayState extends MusicBeatState
 				}
 				else if (mashViolations > 2)
 				{
-					// this is bad but whatever
+					// this is bad but fuck you
 					playerStrums.members[0].animation.play('static');
 					playerStrums.members[1].animation.play('static');
 					playerStrums.members[2].animation.play('static');
@@ -3521,7 +3520,7 @@ class PlayState extends MusicBeatState
 						var array = [note.strumTime,note.sustainLength,note.noteData,noteDiff];
 						if (note.isSustainNote)
 							array[1] = -1;
-						trace('note ' + array[0]);
+						trace('P1 NOTE #' + array[0]);
 						saveNotes.push(array);
 					}
 					
@@ -3722,8 +3721,7 @@ class PlayState extends MusicBeatState
 		if (FlxG.save.data.camzoom)
 		{
 			// HARDCODING FOR MILF ZOOMS!
-			if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.5)
-				//increase camera zoom
+			if (curSong.toLowerCase() == 'milf' && curBeat >= 168 && curBeat < 200 && camZooming && FlxG.camera.zoom < 1.35)
 			{
 				FlxG.camera.zoom += 0.015;
 				camHUD.zoom += 0.03;
@@ -3792,7 +3790,7 @@ class PlayState extends MusicBeatState
 			case "philly":
 				if(FlxG.save.data.distractions){
 					if (!trainMoving)
-						trainCooldown += 0;
+						trainCooldown += 1;
 	
 					if (curBeat % 4 == 0)
 					{

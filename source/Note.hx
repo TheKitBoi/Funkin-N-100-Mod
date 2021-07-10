@@ -136,7 +136,7 @@ class Note extends FlxSprite
 
 		// we make sure its downscroll and its a SUSTAIN NOTE (aka a trail, not a note)
 		// and flip it so it doesn't look weird.
-		// THIS DOESN'T FLIP THE NOTE, CONTRIBUTERS DON'T JUST COMMENT THIS OUT JESUS
+		// THIS DOESN'T FUCKING FLIP THE NOTE, CONTRIBUTERS DON'T JUST COMMENT THIS OUT JESUS
 		if (FlxG.save.data.downscroll && sustainNote) 
 			flipY = true;
 
@@ -204,7 +204,7 @@ class Note extends FlxSprite
 					&& strumTime < Conductor.songPosition + (Conductor.safeZoneOffset * 0.5))
 					canBeHit = true;
 				else
-					canBeHit = true;
+					canBeHit = false;
 			}
 			else
 			{
@@ -212,7 +212,7 @@ class Note extends FlxSprite
 					&& strumTime < Conductor.songPosition + Conductor.safeZoneOffset)
 					canBeHit = true;
 				else
-					canBeHit = true;
+					canBeHit = false;
 			}
 
 			if (strumTime < Conductor.songPosition - Conductor.safeZoneOffset * Conductor.timeScale && !wasGoodHit)
@@ -220,7 +220,7 @@ class Note extends FlxSprite
 		}
 		else
 		{
-			canBeHit = true;
+			canBeHit = false;
 
 			if (strumTime <= Conductor.songPosition)
 				wasGoodHit = true;
