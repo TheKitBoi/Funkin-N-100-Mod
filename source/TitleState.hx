@@ -224,7 +224,15 @@ class TitleState extends MusicBeatState
 
 		credTextShit.visible = false;
 
-		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('newgrounds_logo'));
+		ngSpr = new FlxSprite(0, FlxG.height * 0.52).loadGraphic(Paths.image('funkin x newgrounds'));
+		add(ngSpr);
+		ngSpr.visible = false;
+		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
+		ngSpr.updateHitbox();
+		ngSpr.screenCenter(X);
+		ngSpr.antialiasing = true;
+
+		ngSpr = new FlxSprite(0, FlxG.height * 0.48).loadGraphic(Paths.image('KadeEngineLogoOld'));
 		add(ngSpr);
 		ngSpr.visible = false;
 		ngSpr.setGraphicSize(Std.int(ngSpr.width * 0.8));
@@ -427,7 +435,10 @@ class TitleState extends MusicBeatState
 					createCoolText(['In Partnership', 'with']);
 			case 7:
 				if (Main.watermarks)
+				{
 					addMoreText('KadeDeveloper');
+					ngSpr.visible = true;
+				}
 				else
 				{
 					addMoreText('Newgrounds');
