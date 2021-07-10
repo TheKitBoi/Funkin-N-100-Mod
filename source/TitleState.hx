@@ -330,7 +330,8 @@ class TitleState extends MusicBeatState
 					returnedData[1] = data.substring(data.indexOf('-'), data.length);
 				  	if (!MainMenuState.kadeEngineVer.contains(returnedData[0].trim()) && !OutdatedSubState.leftState && MainMenuState.nightly == "")
 					{
-						trace('outdated lol! ' + returnedData[0] + ' != ' + MainMenuState.kadeEngineVer);
+						trace('cue the outdatedsubstate thing that nobody cares enough about to get new ver..');
+						trace ('although there should be like a thing where you can disable this on mods but kade isnt big brain enogh to do so');
 						OutdatedSubState.needVer = returnedData[0];
 						OutdatedSubState.currChanges = returnedData[1];
 						FlxG.switchState(new OutdatedSubState());
@@ -343,7 +344,7 @@ class TitleState extends MusicBeatState
 				}
 				
 				http.onError = function (error) {
-				  trace('error: $error');
+				  trace('EEROR #69420: $error');
 				  FlxG.switchState(new MainMenuState()); // fail but we go anyway
 				}
 				
