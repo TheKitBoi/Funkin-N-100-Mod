@@ -24,7 +24,8 @@ class Main extends Sprite
 	var framerate:Int = 140; // How many frames per second the game should run at.
 																										// applies everywhere, if changing this DO NOT TAMPER WITH "KadeEngineData.hx"
 	var skipSplash:Bool = true; // Whether to skip the flixel splash screen that appears in release mode.
-	var startFullscreen:Bool = false; // Whether to start the game in fullscreen on desktop targets
+	var startFullscreen:Bool = true; // Whether to start the game in fullscreen on desktop targets
+	// have at it for v1.10.2 // alt+enter to toggle fullscreen ffs
 
 	public static var watermarks = true; // Whether to put Kade Engine literally anywhere (corrected by roz now, kade learn math n spellin broski)
 
