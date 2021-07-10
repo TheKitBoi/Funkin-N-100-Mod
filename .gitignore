@@ -1,3 +1,5 @@
-export/
+export/release/windows/haxe
+export/release/windows/obj
+export/release/html5
 docs/
 hidden_source/
