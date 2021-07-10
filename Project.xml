@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': N-100 Mod" file="Kade Engine" packageName="com.kadedev.kadeengine" package="com.kadedev.kadeengine" main="Main" version="0.2.7.1" company="kadedev" />
+	<app title="Friday Night Funkin': N-100 Mod" file="Kade Engine" packageName="com.trinichrys.n100" package="com.trinichrys.n100" main="Main" version="0.2.7.1" company="trinichrys" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -24,7 +24,7 @@
 	<window if="html5" resizable="true" />
 
 	<!--Desktop-specific-->
-	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" vsync="false"/>
+	<window if="desktop" orientation="landscape" fullscreen="false" resizable="false" vsync="false"/>
 
 	<!--Mobile-specific-->
 	<window if="mobile" orientation="landscape" fullscreen="true" width="0" height="0" resizable="false"/>
@@ -107,7 +107,7 @@
 	
 	<!-- <assets path="CHANGELOG.md" rename='changelog.txt'/> -->
 
-	<!-- NOTE FOR FUTURE SELF SINCE FONTS ARE ALWAYS FUCKY 
+	<!-- NOTE FOR FUTURE SELF SINCE FONTS ARE ALWAYS ANNOYING
 		TO FIX ONE OF THEM, I CONVERTED IT TO OTF. DUNNO IF YOU NEED TO
 		THEN UHHH I USED THE NAME OF THE FONT WITH SETFORMAT() ON THE TEXT!!!
 		NOT USING A DIRECT THING TO THE ASSET!!!
@@ -122,7 +122,11 @@
 	<haxelib name="flixel-addons" />
 	<haxelib name="hscript" />
  <haxelib name="actuate" />
- <haxelib name="extension-webm" if="desktop" />
+	<!--doesn't want to work on macos or linux after multiple testing
+	(not on public source) so we changed it to windows instead of desktop but by future
+	n-100 builds we will recover desktop-wide or smth lol
+	also idk if its just with our webm support here but we'll work sm out-->
+ <haxelib name="extension-webm" if="windows" /> //
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
