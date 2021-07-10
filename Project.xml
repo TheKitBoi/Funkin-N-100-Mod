@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin': N-100 Mod" file="Kade Engine" packageName="com.trinichrys.n100" package="com.trinichrys.n100" main="Main" version="0.2.7.1" company="trinichrys" />
+	<app title="Friday Night Funkin': N-100 Mod" file="Kade Engine" packageName="com.trinichrys.n100" package="com.trinichrys.n100" main="Main" version="N-100 v1.10.2 - 0.2.7.1" company="trinichrys" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
