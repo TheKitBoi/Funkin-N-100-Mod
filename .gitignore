@@ -1,4 +1,3 @@
-export/release/windows/haxe
-export/release/windows/obj
+export/
 docs/
 hidden_source/
