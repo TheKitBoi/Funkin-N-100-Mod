@@ -187,9 +187,9 @@ class TitleState extends MusicBeatState
 		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
 		gfDance.animation.addByIndices('danceLeft', 'gfDance', [30, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], "", 24, false);
 		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
+		gfDance.antialiasing = true;
 		trace('yass shake it gurl');
 		// was dared to do that by trin!!!
-		gfDance.antialiasing = true;
 		add(gfDance);
 		add(logoBl);
 
@@ -421,21 +421,21 @@ class TitleState extends MusicBeatState
 			case 1:
 				createCoolText(['trinichrys', 'rozological', 'nnixis', 'labrrxnth', 'tmm niko']);
 			// credTextShit.visible = true;
-			case 2:
+			case 3:
 				addMoreText('presents');
 			// credTextShit.text += '\npresent...';
 			// credTextShit.addText();
-			case 3:
+			case 4:
 				deleteCoolText();
 			// credTextShit.visible = false;
 			// credTextShit.text = 'In association \nwith';
 			// credTextShit.screenCenter();
-			case 4:
+			case 5:
 				if (Main.watermarks)
 					createCoolText(['Built', 'on']);
 				else
 					createCoolText(['In Partnership', 'with']);
-			case 5:
+			case 7:
 				if (Main.watermarks)
 				{
 					addMoreText('Kade Engine');
@@ -447,34 +447,34 @@ class TitleState extends MusicBeatState
 					ngSpr.visible = true;
 				}
 			// credTextShit.text += '\nNewgrounds';
-			case 6:
+			case 8:
 				deleteCoolText();
 				ngSpr.visible = false;
 			// credTextShit.visible = false;
 
 			// credTextShit.text = 'Shoutouts Tom Fulp';
 			// credTextShit.screenCenter();
-			case 7:
+			case 9:
 				createCoolText([curWacky[0]]);
 			// credTextShit.visible = true;
-			case 8:
+			case 11:
 				addMoreText(curWacky[1]);
 			// credTextShit.text += '\nlmao';
-			case 9:
+			case 12:
 				deleteCoolText();
 			// credTextShit.visible = false;
 			// credTextShit.text = "Friday";
 			// credTextShit.screenCenter();
-			case 10:
+			case 13:
 				addMoreText('Friday');
 			// credTextShit.visible = true;
-			case 11:
+			case 14:
 				addMoreText('Night');
 			// credTextShit.text += '\nNight';
-			case 12:
+			case 15:
 				addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
 
-			case 13:
+			case 16:
 				skipIntro();
 		}
 	}
@@ -487,7 +487,7 @@ class TitleState extends MusicBeatState
 		{
 			remove(ngSpr);
 
-			FlxG.camera.flash(FlxColor.WHITE, 4);
+			FlxG.camera.flash(FlxColor.PURPLE, 4);
 			remove(credGroup);
 			skippedIntro = true;
 		}
