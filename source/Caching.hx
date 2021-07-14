@@ -84,7 +84,7 @@ class Caching extends MusicBeatState
         var images = [];
         var music = [];
 
-        trace("caching images...");
+        trace("preloading images...");
 
         for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/shared/images/characters")))
         {
@@ -93,7 +93,7 @@ class Caching extends MusicBeatState
             images.push(i);
         }
 
-        trace("caching music...");
+        trace("preloading music...");
 
         for (i in FileSystem.readDirectory(FileSystem.absolutePath("assets/songs")))
         {
@@ -108,7 +108,7 @@ class Caching extends MusicBeatState
         {
             var replaced = i.replace(".png","");
             FlxG.bitmap.add(Paths.image("characters/" + replaced,"shared"));
-            trace("cached " + replaced);
+            trace("preload - " + replaced);
             done++;
         }
 
@@ -116,8 +116,11 @@ class Caching extends MusicBeatState
         {
             FlxG.sound.cache(Paths.inst(i));
             FlxG.sound.cache(Paths.voices(i));
-            trace("cached " + i);
+            trace("preload - " + i);
             done++;
+
+            // did like preload instead of cache bcuz some ppl dont know what 'cache' means
+            // so to simplify it i just put- preload..
         }
 
         trace("PRELOAD complete!");
