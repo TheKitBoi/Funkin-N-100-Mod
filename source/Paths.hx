@@ -58,7 +58,7 @@ class Paths
 	inline static public function lua(key:String,?library:String)
 	{
 		return getPath('data/$key.lua', TEXT, library);
-		// LUA SHIS
+		// LUA THING
 	}
 
 	inline static public function luaImage(key:String, ?library:String)
@@ -67,10 +67,23 @@ class Paths
 		// PNG OBJ
 	}
 
+	inline static public function jpg(key:String, ?library:String)
+		{
+			return getPath('data/$key.jpg', IMAGE, library);
+			// ooh lookey here
+		}
+
+		inline static public function jpeg(key:String, ?library:String)
+			{
+				return getPath('data/$key.jpeg', IMAGE, library);
+				// jpeg diff
+			}
+
 	inline static public function txt(key:String, ?library:String)
 	{
 		return getPath('data/$key.txt', TEXT, library);
 		// TXT THING only for frames im sure, somewhat readme
+		// and like stuff in data lol
 	}
 
 	inline static public function xml(key:String, ?library:String)
