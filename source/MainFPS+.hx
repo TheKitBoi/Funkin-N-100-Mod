@@ -14,18 +14,27 @@ import openfl.Lib;
 import openfl.display.FPS;
 import openfl.display.Sprite;
 import openfl.events.Event;
+import openfl.media.Video;
 
 class Main extends Sprite
 {
 	var gameWidth:Int = 1280; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	var gameHeight:Int = 720; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).
-	var initialState:Class<FlxState> = TitleState; // The FlxState the game starts with.
+	var initialState:Class<FlxState> = TitleVidState; // The FlxState the game starts with.
 	var zoom:Float = -1; // If -1, zoom is automatically calculated to fit the window dimensions.
 	var framerate:Int = 140; // How many frames per second the game should run at.
 																										// applies everywhere, if changing this DO NOT TAMPER WITH "KadeEngineData.hx"
 	var skipSplash:Bool = false; // Whether to skip the flixel splash screen that appears in release mode.
 	var startFullscreen:Bool = true; // Whether to start the game in fullscreen on desktop targets
 	// have at it for v1.10.2 // alt+enter to toggle fullscreen ffs
+
+	public static var fpsDisplay:FPS;
+
+	#if web
+		var vHandler:VideoHandler;
+	#elseif desktop
+		var webmHandle:WebmHandler;
+	#end
 
 	public static var watermarks = true; // Whether to put Kade Engine literally anywhere (corrected by roz now, kade learn math n spellin broski)
 
@@ -38,6 +47,9 @@ class Main extends Sprite
 
 		Lib.current.addChild(new Main());
 	}
+
+	public static var video:Bool;
+	public static var preload:Bool;
 
 	public function new()
 	{
@@ -85,27 +97,29 @@ class Main extends Sprite
 
 		addChild(game);
 
-		var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
-		// actually dont del it cuz it wont work lol
-
-		#if web
-		var str1:String = "HTML CRAP";
-		var vHandler = new VideoHandler();
-		vHandler.init1();
-		vHandler.video.name = str1;
-		addChild(vHandler.video);
-		vHandler.init2();
-		GlobalVideo.setVid(vHandler);
-		vHandler.source(ourSource);
-		#elseif desktop
-		var str1:String = "WEBM SHIT"; 
-		var webmHandle = new WebmHandler();
-		webmHandle.source(ourSource);
-		webmHandle.makePlayer();
-		webmHandle.webm.name = str1;
-		addChild(webmHandle.webm);
-		GlobalVideo.setWebm(webmHandle);
-		#end
+		if(video){
+			var ourSource:String = "assets/videos/DO NOT DELETE OR GAME WILL CRASH/dontDelete.webm";
+	
+			#if web
+			var str1:String = "HTML CRAP";
+			vHandler = new VideoHandler();
+			vHandler.init1();
+			vHandler.video.name = str1;
+			addChild(vHandler.video);
+			vHandler.init2();
+			GlobalVideo.setVid(vHandler);
+			vHandler.source(ourSource);
+			#elseif desktop
+			WebmPlayer.SKIP_STEP_LIMIT = 90;
+			var str1:String = "WEBM SHIT"; 
+			webmHandle = new WebmHandler();
+			webmHandle.source(ourSource);
+			webmHandle.makePlayer();
+			webmHandle.webm.name = str1;
+			addChild(webmHandle.webm);
+			GlobalVideo.setWebm(webmHandle);
+			#end
+			}
 		
 
 		#if !mobile

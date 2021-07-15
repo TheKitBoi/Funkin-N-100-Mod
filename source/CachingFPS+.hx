@@ -34,7 +34,7 @@ class Caching extends MusicBeatState
 
         FlxG.worldBounds.set(0,0);
 
-        text = new FlxText(FlxG.width / 1.44, FlxG.height / 1.5 + 300,0,"Preloading Assets...");
+        text = new FlxText(FlxG.width / 2, FlxG.height / 2 + 300,0,"Preloading Assets...");
         text.size = 34;
         text.alignment = FlxTextAlign.CENTER;
         text.alpha = 0;
@@ -125,7 +125,7 @@ class Caching extends MusicBeatState
 
         trace("PRELOAD complete!");
 
-        FlxG.switchState(new TitleState());
+        FlxG.switchState(new TitleVidState());
     }
 
 }

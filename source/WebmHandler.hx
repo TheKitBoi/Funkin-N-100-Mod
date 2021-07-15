@@ -2,6 +2,7 @@ package;
 
 import flixel.FlxG;
 import openfl.display.Sprite;
+import openfl.media.Video;
 #if desktop
 import webm.*;
 #end

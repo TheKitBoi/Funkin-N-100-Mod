@@ -11,6 +11,7 @@ import flixel.util.FlxTimer;
 import lime.app.Application;
 import flixel.system.FlxSound;
 import openfl.utils.Assets;
+import openfl.media.Video;
 
 import openfl.Lib;
 

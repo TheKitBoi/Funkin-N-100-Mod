@@ -23,6 +23,7 @@ import flixel.util.FlxTimer;
 import io.newgrounds.NG;
 import lime.app.Application;
 import openfl.Assets;
+import openfl.media.Video;
 //import polymod.Polymod;
 
 using StringTools;
@@ -182,8 +183,6 @@ class TitleState extends MusicBeatState
 		if (!skippedIntro)
 		{
 			FlxG.camera.flash(FlxColor.WHITE, 1);
-			PlayerSettings.player1.controls.loadKeyBinds();
-			Config.configCheck();
 			skippedIntro = true;
 		}
 	}
