@@ -376,7 +376,7 @@ class TitleState extends MusicBeatState
 	{
 		for (i in 0...textArray.length)
 		{
-			var money:Alphabet = new Alphabet(0, 0, textArray[i], true, false);
+			var money:Alphabet = new Alphabet(0, 0.75, textArray[i], true, false);
 			money.screenCenter(X);
 			money.y += (i * 60) + 200;
 			credGroup.add(money);
@@ -419,7 +419,7 @@ class TitleState extends MusicBeatState
 		switch (curBeat)
 		{
 			case 1:
-				createCoolText(['trinichrys', 'rozological', 'nnixis', 'labrrxnth', 'tmm niko']);
+				createCoolText(['trinichrys', 'rozological', 'nnixis', 'labrrxnth', 'tmm niko', 'cybertheblade']);
 			// credTextShit.visible = true;
 			case 3:
 				addMoreText('presents');

@@ -1,5 +1,5 @@
 
-![Kade Engine logo](assets/preload/images/KadeEngineLogo.png)
+![N-100 logo](assets/preload/images/KadeEngineLogo.png)
 
 [![AppVeyor](https://img.shields.io/appveyor/build/KadeDev/Kade-Engine-Windows?label=windows%20build)](https://ci.appveyor.com/project/KadeDev/kade-engine-windows/branch/master/artifacts) [![AppVeyor](https://img.shields.io/appveyor/build/KadeDev/Kade-Engine-Macos?label=macOS%20build)](https://ci.appveyor.com/project/KadeDev/kade-engine-macos/branch/master/artifacts)  [![AppVeyor](https://img.shields.io/appveyor/build/KadeDev/Kade-Engine-Linux?label=linux%20build)](https://ci.appveyor.com/project/KadeDev/kade-engine-linux/branch/master/artifacts) [![AppVeyor](https://img.shields.io/appveyor/build/daniel11420/KadeEngineWeb?label=html5&20build)](https://ci.appveyor.com/project/daniel11420/KadeEngineWeb) [![Discord](https://img.shields.io/discord/808039740464300104?label=discord)](https://discord.gg/xN4AYkQZ4r) [![GitHub issues](https://img.shields.io/github/issues/KadeDev/Kade-Engine)](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/KadeDev/Kade-Engine)](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master/pulls) []() []()
 
@@ -61,9 +61,10 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 ### Friday Night Funkin': N-100 Mod
 - [Trinichrys](https://instagram.com/trinichrys) - Mod Creator, Sprites, Music, Programming
 - [Rozological](https://instagram.com/rozological) - Lead Programmer/Programming, Sprites
-- [nnixis](https://instagram.com/nnixis) - Sprites Management
-- [Labrrxnth](https://instagram.com/julian_nrnjo) - Mod Management/Maintainer
+- [nnixis](https://instagram.com/nnixis) - Sprites Management, Art, Animation
+- [Labrrxnth](https://instagram.com/julian_nrnjo) - Mod Management/Maintainer, Art
 - [TMM Niko](https://instagram.com/tmm_niko) - Music Sidelines, N-100 OST Record Label Enforcer (ENVYVERSE Records)
+- [CyberTheBlade](https://twitter.com/CyberTheblade) - Music, Charts
 
 ### Kade Engine
 - [KadeDeveloper](https://twitter.com/KadeDeveloper) - Maintainer and lead programmer
