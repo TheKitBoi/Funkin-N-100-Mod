@@ -1,7 +1,7 @@
 
 ![N-100 logo](assets/preload/images/KadeEngineLogo.png)
 
-[![Discord](https://img.shields.io/discord/808039740464300104?label=discord)](https://discord.gg/xN4AYkQZ4r) [![GitHub issues](https://img.shields.io/github/issues/KadeDev/Kade-Engine)](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/KadeDev/Kade-Engine)](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master/pulls) []() []()
+[![Discord](https://img.shields.io/discord/808039740464300104?label=discord)](https://discord.gg/xN4AYkQZ4r) [![GitHub issues](https://img.shields.io/github/issues/KadeDev/Kade-Engine)](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master/issues) [![GitHub pull requests](https://img.shields.io/github/issues-pr/KadeDev/Kade-Engine)](https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master/pulls) ![GitHub](https://img.shields.io/github/license/KadeDev/Kade-Engine)
 
 # Friday Night Funkin': N-100 Mod
 ## Friday Night Funkin'
