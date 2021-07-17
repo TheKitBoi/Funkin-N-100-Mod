@@ -125,7 +125,14 @@ class Caching extends MusicBeatState
 
         trace("PRELOAD complete!");
 
-        FlxG.switchState(new TitleState());
+        FlxG.switchState(new TitleState()); 
+        // your frameskip limit which you can leave blank or put a frameskip limit 
+        // you can fill this parameter voluntarily and it must be an integer not a decimal, [true/false]
+        // if it is true, the music playing will automatically be paused, this is good for midway videos while playing or idk for 
+        // pausing the game and showing the video cutscene
+
+        // FlxG.switchState new TitleState;
+
     }
 
 }
