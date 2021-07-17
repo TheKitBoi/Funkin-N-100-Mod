@@ -308,5 +308,5 @@ enter true or false for music auto pause and resume \
 WARNING WARNING! function is very unstable and won't work do not copy the contents of the `function` folder please and also you make your own class with code or something idk i won't be your coding teacher ask kadedev or something idk
 # End of the document
 Thank you for taking your time to read the entire repository ReadMe file. \
-This is the end of the document i hope you understood everything i wrote for you to play videos in `Friday Night Funkin`. \
+This is the end of the document. I hope you understood with us on everything, and I hope you enjoy our mod. <3
 Support the kickstarter here: https://www.kickstarter.com/projects/funkin/friday-night-funkin-the-full-ass-game
