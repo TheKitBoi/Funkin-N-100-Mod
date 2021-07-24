@@ -26,7 +26,6 @@ class OverlayShader extends FlxShader
 			vec4 base = texture2D(bitmap, openfl_TextureCoordv);
 			gl_FragColor = blendLighten(base, uBlendColor, uBlendColor.a);
 		}')
-		// i dont think these r accurate shaders -roz
 	public function new()
 	{
 		super();

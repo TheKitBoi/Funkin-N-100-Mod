@@ -29,10 +29,13 @@ class OutdatedSubState extends MusicBeatState
 	{
 		super.create();
 		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('kadedev slander', 'shared'));
-		// literally what is that for
 		bg.scale.x *= 1.55;
 		bg.scale.y *= 1.55;
 		bg.screenCenter();
+		if(FlxG.save.data.antialiasing)
+			{
+				bg.antialiasing = true;
+			}
 		add(bg);
 		
 		var kadeLogo:FlxSprite = new FlxSprite(FlxG.width, 0).loadGraphic(Paths.image('KadeEngineLogo'));
@@ -41,15 +44,28 @@ class OutdatedSubState extends MusicBeatState
 		kadeLogo.x -= kadeLogo.frameHeight;
 		kadeLogo.y -= 180;
 		kadeLogo.alpha = 0.8;
+		if(FlxG.save.data.antialiasing)
+			{
+				kadeLogo.antialiasing = true;
+			}
 		add(kadeLogo);
 		
 		var txt:FlxText = new FlxText(0, 0, FlxG.width,
-			"press escape to load game\nspace for cool github! "
-			+ "\n"
-			+ "\n\n\n\n"
-			+ "\n"
-			+ "",
+			"Your Kade Engine is outdated!\nYou are on "
+			+ MainMenuState.kadeEngineVer
+			+ "\nwhile the most recent version is " + needVer + "."
+			+ "\n\nWhat's new:\n\n"
+			+ currChanges
+			+ "\n& more changes and bugfixes in the full changelog"
+			+ "\n\nPress Space to view the full changelog and update\nor ESCAPE to ignore this",
 			32);
+
+		if (MainMenuState.nightly != "")
+			txt.text = 
+			"You are on\n"
+			+ MainMenuState.kadeEngineVer
+			+ "\nWhich is a PRE-RELEASE BUILD!"
+			+ "\n\nReport all bugs to the author of the pre-release.\nSpace/Escape ignores this.";
 		
 		txt.setFormat("VCR OSD Mono", 32, FlxColor.fromRGB(200, 200, 200), CENTER);
 		txt.borderColor = FlxColor.BLACK;
@@ -83,9 +99,14 @@ class OutdatedSubState extends MusicBeatState
 
 	override function update(elapsed:Float)
 	{
-		if (controls.ACCEPT)
+		if (controls.ACCEPT && MainMenuState.nightly == "")
 		{
-			fancyOpenURL("https://github.com/Trinichrys/Friday-Night-Funkin-N-100-Mod-SC-Master");
+			fancyOpenURL("https://kadedev.github.io/Kade-Engine/changelogs/changelog-" + needVer);
+		}
+		else if (controls.ACCEPT)
+		{
+			leftState = true;
+			FlxG.switchState(new MainMenuState());
 		}
 		if (controls.BACK)
 		{

@@ -1,5 +1,8 @@
 package;
 
+import openfl.utils.Assets;
+import flixel.graphics.FlxGraphic;
+import flixel.system.FlxAssets.FlxGraphicAsset;
 import flixel.FlxG;
 import flixel.graphics.frames.FlxAtlasFrames;
 import openfl.utils.AssetType;
@@ -50,7 +53,7 @@ class Paths
 		return 'assets/$file';
 	}
 
-	inline static public function file(file:String, type:AssetType = TEXT, ?library:String)
+	inline static public function file(file:String, ?library:String, type:AssetType = TEXT)
 	{
 		return getPath(file, type, library);
 	}
@@ -58,53 +61,27 @@ class Paths
 	inline static public function lua(key:String,?library:String)
 	{
 		return getPath('data/$key.lua', TEXT, library);
-		// LUA THING
 	}
 
 	inline static public function luaImage(key:String, ?library:String)
 	{
 		return getPath('data/$key.png', IMAGE, library);
-		// PNG OBJ
 	}
-
-	inline static public function jpg(key:String, ?library:String)
-		{
-			return getPath('data/$key.jpg', IMAGE, library);
-			// ooh lookey here
-		}
-
-		inline static public function jpeg(key:String, ?library:String)
-			{
-				return getPath('data/$key.jpeg', IMAGE, library);
-				// jpeg diff
-			}
 
 	inline static public function txt(key:String, ?library:String)
 	{
-		return getPath('data/$key.txt', TEXT, library);
-		// TXT THING only for frames im sure, somewhat readme
-		// and like stuff in data lol
+		return getPath('$key.txt', TEXT, library);
 	}
 
 	inline static public function xml(key:String, ?library:String)
 	{
 		return getPath('data/$key.xml', TEXT, library);
-		// for FlxSprite sprite thing im sure and whatever xmls used else in funkin
-	}
-
-	inline static public function video(key:String, ?library:String)
-	{
-		return getPath('videos/$key.webm', TEXT, library);
-		// webm keys
 	}
 
 	inline static public function json(key:String, ?library:String)
 	{
 		return getPath('data/$key.json', TEXT, library);
-		// chart thing
 	}
-
- // <!--PATH THING FROM HERE DOWN LOL!--!>
 
 	static public function sound(key:String, ?library:String)
 	{
@@ -151,13 +128,48 @@ class Paths
 		return 'assets/fonts/$key';
 	}
 
-	inline static public function getSparrowAtlas(key:String, ?library:String)
+	inline static public function getSparrowAtlas(key:String, ?library:String, ?isCharacter:Bool = false)
 	{
+		var usecahce = FlxG.save.data.cacheImages;
+		#if !cpp
+		usecahce = false;
+		#end
+		if (isCharacter)
+			if (usecahce)
+				#if cpp
+				return FlxAtlasFrames.fromSparrow(imageCached(key), file('images/characters/$key.xml', library));
+				#else
+				return null;
+				#end
+			else
+				return FlxAtlasFrames.fromSparrow(image('characters/$key', library), file('images/characters/$key.xml', library));
 		return FlxAtlasFrames.fromSparrow(image(key, library), file('images/$key.xml', library));
 	}
 
-	inline static public function getPackerAtlas(key:String, ?library:String)
+	#if cpp
+	inline static public function imageCached(key:String):FlxGraphic
 	{
+		var data = Caching.bitmapData.get(key);
+		trace('finding ${key} - ${data.bitmap}');
+		return data;
+	}
+	#end
+	
+	inline static public function getPackerAtlas(key:String, ?library:String, ?isCharacter:Bool = false)
+	{
+		var usecahce = FlxG.save.data.cacheImages;
+		#if !cpp
+		usecahce = false;
+		#end
+		if (isCharacter)
+			if (usecahce)
+				#if cpp
+				return FlxAtlasFrames.fromSpriteSheetPacker(imageCached(key), file('images/$key.txt', library));
+				#else
+				return null;
+				#end
+			else
+				return FlxAtlasFrames.fromSpriteSheetPacker(image('characters/$key'), file('images/characters/$key.txt', library));
 		return FlxAtlasFrames.fromSpriteSheetPacker(image(key, library), file('images/$key.txt', library));
 	}
 }

@@ -28,9 +28,7 @@ class MenuItem extends FlxSpriteGroup
 	}
 
 	// if it runs at 60fps, fake framerate will be 6
-	// if run at 120fps, fake framerate SHOULD be 12 cuz idk how it is for like kade n i knoe i twisted some crap w fps and stuff while testin\
-	// that im too lazy to fix
-	// 144 fps, fake framerate will be like 14, and will update the graphic every 0.016666 * 3 seconds still???
+	// if it runs at 144 fps, fake framerate will be like 14, and will update the graphic every 0.016666 * 3 seconds still???
 	// so it runs basically every so many seconds, not dependant on framerate??
 	// I'm still learning how math works thanks whoever is reading this lol
 	var fakeFramerate:Int = Math.round((1 / FlxG.elapsed) / 10);
@@ -38,7 +36,7 @@ class MenuItem extends FlxSpriteGroup
 	override function update(elapsed:Float)
 	{
 		super.update(elapsed);
-		y = FlxMath.lerp(y, (targetY * 140) + 480, 0.17 * (60 / FlxG.save.data.fpsCap));
+		y = FlxMath.lerp(y, (targetY * 120) + 480, 0.17 * (60 / FlxG.save.data.fpsCap));
 
 		if (isFlashing)
 			flashingInt += 1;

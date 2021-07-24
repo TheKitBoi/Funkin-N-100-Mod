@@ -2,7 +2,7 @@
 
 class LuaShader extends FlxShader
 {
-    // SHADER FOR LUA CODE
+    // SHADER SHIT FOR LUA CODE
 
     public function new(frag,vert)
     {   

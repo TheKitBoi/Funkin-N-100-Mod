@@ -12,4 +12,6 @@ class HelperFunctions
 	public static function GCD(a, b) {
 		return b == 0 ? FlxMath.absInt(a) : GCD(b, a % b);
 	}
+ // im going thru changes and i just see this added line
+	// questioned existance
 }

@@ -2,7 +2,6 @@ package;
 
 import flixel.FlxG;
 import openfl.display.Sprite;
-import openfl.media.Video;
 #if desktop
 import webm.*;
 #end
@@ -164,7 +163,7 @@ class WebmHandler
 	public var webm:Sprite;
 	public function new()
 	{
-	trace("THIS IS ANDROID! or smth...");
+	trace("THIS IS ANDROID! or some shit...");
 	}
 	#end
 }
