@@ -102,6 +102,7 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
  4. Install and set up the necessary libraries:
 	 - `haxelib install lime 7.9.0`
 	 - `haxelib install openfl`
+		- `haxelib install actuate`
 	 - `haxelib install flixel`
 	 - `haxelib run lime setup`
 	 - `haxelib run lime setup flixel`
@@ -115,7 +116,6 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
 	 - `haxelib git faxe https://github.com/Trinichrys/faxe`
 	 - `haxelib git polymod https://github.com/Trinichrys/polymod.git`
 	 - `haxelib git discord_rpc https://github.com/Trinichrys/linc_discord-rpc`
-	 - `haxelib install actuate`
 	 - `haxelib git extension-webm https://github.com/Trinichrys/extension-webm`
 	 - `lime rebuild extension-webm windows`
 
