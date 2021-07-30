@@ -112,11 +112,11 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
 	 - `haxelib install hscript`
 	 - `haxelib install newgrounds`
 	 - `haxelib install linc_luajit`
-	 - `haxelib git faxe https://github.com/uhrobots/faxe`
-	 - `haxelib git polymod https://github.com/larsiusprime/polymod.git`
-	 - `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc`
+	 - `haxelib git faxe https://github.com/Trinichrys/faxe`
+	 - `haxelib git polymod https://github.com/Trinichrys/polymod.git`
+	 - `haxelib git discord_rpc https://github.com/Trinichrys/linc_discord-rpc`
 	 - `haxelib install actuate`
-	 - `haxelib git extension-webm https://github.com/KadeDev/extension-webm`
+	 - `haxelib git extension-webm https://github.com/Trinichrys/extension-webm`
 	 - `lime rebuild extension-webm windows`
 
 ### Windows-only dependencies (only for building *to* Windows. Building html5 on Windows does not require this)
