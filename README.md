@@ -108,6 +108,7 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
 	- `haxelib install flixel-addons`
 	- `haxelib install flixel-ui`
 	- `haxelib install hscript`
+	- `haxelib install openfl-webm`
 	- `haxelib install newgrounds`
 	- `haxelib install linc_luajit`
 	- `haxelib install markdown`
