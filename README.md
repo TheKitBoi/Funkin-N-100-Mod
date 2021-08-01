@@ -115,6 +115,7 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
 	- `haxelib run flixel-tools setup`
 	- `haxelib run lime setup`
 	- `haxelib run lime setup flixel`
+	- `haxelib git synapse https://github.com/Trinichrys/synapse`
 	- `haxelib git faxe https://github.com/Trinichrys/faxe`
 	- `haxelib git polymod https://github.com/Trinichrys/polymod.git`
 	- `haxelib git discord_rpc https://github.com/Trinichrys/linc_discord-rpc`
