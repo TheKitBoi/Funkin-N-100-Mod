@@ -110,6 +110,8 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
 	- `haxelib install hscript`
 	- `haxelib install newgrounds`
 	- `haxelib install linc_luajit`
+	- `haxelib install markdown`
+	- `haxelib install HtmlParser`
 	- `haxelib run flixel-tools setup`
 	- `haxelib run lime setup`
 	- `haxelib run lime setup flixel`
