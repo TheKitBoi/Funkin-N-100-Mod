@@ -100,29 +100,25 @@ This mod was made and managed all by Trinichrys, Rozological, Labrxxnth and nnix
 	 - Windows: install from the [git-scm](https://git-scm.com/downloads) website.
 	 - Linux: install the `git` package: `sudo apt install git` (ubuntu), `sudo pacman -S git` (arch), etc... (you probably already have it)
  4. Install and set up the necessary libraries:
-	- `haxelib install lime 7.9.0`
-	- `haxelib install openfl`
-	- `haxelib install actuate`
-	- `haxelib install flixel`
-	- `haxelib install flixel-tools`
-	- `haxelib install flixel-addons`
-	- `haxelib install flixel-ui`
-	- `haxelib install hscript`
-	- `haxelib install openfl-webm`
-	- `haxelib install newgrounds`
-	- `haxelib install linc_luajit`
-	- `haxelib install markdown`
-	- `haxelib install HtmlParser`
-	- `haxelib run flixel-tools setup`
-	- `haxelib run lime setup`
-	- `haxelib run lime setup flixel`
-	- `haxelib git synapse https://github.com/Trinichrys/synapse`
-	- `haxelib git faxe https://github.com/Trinichrys/faxe`
-	- `haxelib git polymod https://github.com/Trinichrys/polymod.git`
-	- `haxelib git discord_rpc https://github.com/Trinichrys/linc_discord-rpc`
-	- `haxelib git extension-webm https://github.com/Trinichrys/extension-webm`
-	- `lime rebuild extension-webm windows`
-
+  - `haxelib install lime 7.9.0`
+	 - `haxelib install openfl`
+	 - `haxelib install flixel`
+	 - `haxelib install flixel-tools`
+	 - `haxelib install flixel-addons`
+		- `haxelib install actuate`
+	 - `haxelib install flixel-ui`
+	 - `haxelib install hscript`
+	 - `haxelib install newgrounds`
+	 - `haxelib install linc_luajit`
+	 - `haxelib run flixel-tools setup`
+		- `haxelib run lime setup`
+	 - `haxelib run lime setup flixel`
+	 - `haxelib git faxe https://github.com/uhrobots/faxe`
+	 - `haxelib git polymod https://github.com/larsiusprime/polymod.git`
+	 - `haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc`
+	 - `haxelib git extension-webm https://github.com/KadeDev/extension-webm`
+	 - `lime rebuild extension-webm <ie. windows, macos, linux>`
+		
 ### Windows-only dependencies (only for building *to* Windows. Building html5 on Windows does not require this)
 If you are planning to build for Windows, you also need to install **Visual Studio 2019**. While installing it, *don't click on any of the options to install workloads*. Instead, go to the **individual components** tab and choose the following:
 

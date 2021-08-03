@@ -118,16 +118,14 @@
 	<!--In case you want to use the addons package-->
 	<haxelib name="flixel-addons" />
 	<haxelib name="hscript" />
- <haxelib name="openfl-webm" /> <!-- pretty much same thing ext-webm i think lol???-->
  <haxelib name="actuate" />
-	<haxelib name="extension-webm"/> <!-- Make sure to use https://github.com/Trinichrys/extension-webm -->
+	<haxelib name="extension-webm"/> <!-- Make sure to use https://github.com/KadeDev/extension-webm -->
 
 	<!--In case you want to use the ui package-->
 	<haxelib name="flixel-ui" />
 	<haxelib name="newgrounds"/>
 	<haxelib name="faxe" if='switch'/>
 	<haxelib name="polymod"/>
-	<haxelib name="synapse"/>
 	<haxelib name="discord_rpc" if="windows"/>
 	<haxelib name="linc_luajit" if="windows"/>
 
