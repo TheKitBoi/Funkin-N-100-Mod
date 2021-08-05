@@ -32,8 +32,7 @@ class StoryMenuState extends MusicBeatState
 			['Spookeez', 'South', "Monster"],
 			['Pico', 'Philly Nice', "Blammed"],
 			['Satin Panties', "High", "Milf"],
-			['Cocoa', 'Eggnog', 'Winter Horrorland'],
-			['', '', '']
+			['Cocoa', 'Eggnog', 'Winter Horrorland']
 		];
 	}
 	var curDifficulty:Int = 1;
@@ -46,20 +45,10 @@ class StoryMenuState extends MusicBeatState
 		['spooky', 'bf', 'gf'],
 		['pico', 'bf', 'gf'],
 		['mom', 'bf', 'gf'],
-		['parents-christmas', 'bf', 'gf'],
-		['', 'bf', 'gf']
+		['parents-christmas', 'bf', 'gf']
 	];
 
-	var weekNames:Array<String> = [
-		"How To Funkin'",
-		"The Nightclub",
-		"Not-So Haunted House",
-		"PHILIDELPHIA",
-		"INTERSTATE 69",
-		"LUSH ICE",
-		"In Development",
-		// "Vibe Zone Expressway"
-	];
+	var weekNames:Array<String> = CoolUtil.coolTextFile(Paths.txt('data/weekNames'));
 
 	var txtWeekTitle:FlxText;
 
@@ -101,7 +90,7 @@ class StoryMenuState extends MusicBeatState
 
 		#if windows
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Story Mode Menu", null);
+		DiscordClient.changePresence("In the N-100 Story Mode Menu", null);
 		#end
 
 		transIn = FlxTransitionableState.defaultTransIn;
@@ -132,7 +121,7 @@ class StoryMenuState extends MusicBeatState
 		rankText.screenCenter(X);
 
 		var ui_tex = Paths.getSparrowAtlas('campaign_menu_UI_assets');
-		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFFF9CF51);
+		var yellowBG:FlxSprite = new FlxSprite(0, 56).makeGraphic(FlxG.width, 400, 0xFF9EFFC2);
 
 		grpWeekText = new FlxTypedGroup<MenuItem>();
 		add(grpWeekText);
@@ -218,10 +207,10 @@ class StoryMenuState extends MusicBeatState
 		add(yellowBG);
 		add(grpWeekCharacters);
 
-		txtTracklist = new FlxText(FlxG.width * 0.05, yellowBG.x + yellowBG.height + 100, 0, "Tracks", 32);
+		txtTracklist = new FlxText(FlxG.width * 0.05, yellowBG.x + yellowBG.height + 100, 0, "FEATURING", 32);
 		txtTracklist.alignment = CENTER;
 		txtTracklist.font = rankText.font;
-		txtTracklist.color = 0xFFe55777;
+		txtTracklist.color = 0xFF9effc2;
 		add(txtTracklist);
 		// add(rankText);
 		add(scoreText);

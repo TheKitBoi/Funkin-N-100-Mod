@@ -17,7 +17,6 @@ class BackgroundDancer extends FlxSprite
 		if(FlxG.save.data.antialiasing)
 			{
 				antialiasing = true;
-	  	// time to go demon mode
 			}
 	}
 

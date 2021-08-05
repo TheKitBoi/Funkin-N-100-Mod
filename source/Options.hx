@@ -486,10 +486,10 @@ class FPSCapOption extends Option
 	}
 	
 	override function right():Bool {
-		if (FlxG.save.data.fpsCap >= 360)
+		if (FlxG.save.data.fpsCap >= 290)
 		{
-			FlxG.save.data.fpsCap = 360;
-			(cast (Lib.current.getChildAt(0), Main)).setFPSCap(360);
+			FlxG.save.data.fpsCap = 290;
+			(cast (Lib.current.getChildAt(0), Main)).setFPSCap(290);
 		}
 		else
 			FlxG.save.data.fpsCap = FlxG.save.data.fpsCap + 10;
@@ -499,8 +499,8 @@ class FPSCapOption extends Option
 	}
 
 	override function left():Bool {
-		if (FlxG.save.data.fpsCap > 360)
-			FlxG.save.data.fpsCap = 360;
+		if (FlxG.save.data.fpsCap > 290)
+			FlxG.save.data.fpsCap = 290;
 		else if (FlxG.save.data.fpsCap < 60)
 			FlxG.save.data.fpsCap = Application.current.window.displayMode.refreshRate;
 		else
@@ -512,7 +512,7 @@ class FPSCapOption extends Option
 	override function getValue():String
 	{
 		return "Current FPS Cap: " + FlxG.save.data.fpsCap + 
-		(FlxG.save.data.fpsCap == Application.current.window.displayMode.refreshRate ? "HZ (Refresh Rate)" : "");
+		(FlxG.save.data.fpsCap == Application.current.window.displayMode.refreshRate ? "Hz (Refresh Rate)" : "");
 	}
 }
 
@@ -604,7 +604,7 @@ class Optimization extends Option
 	
 		private override function updateDisplay():String
 		{
-		 return "Classic " + (FlxG.save.data.optimize ? "ON" : "OFF");
+			return "Optimization " + (FlxG.save.data.optimize ? "ON" : "OFF");
 		}
 }
 
@@ -710,7 +710,7 @@ class WatermarkOption extends Option
 
 	private override function updateDisplay():String
 	{
-		return " " + (Main.watermarks ? "on" : "off");
+		return "Watermarks " + (Main.watermarks ? "on" : "off");
 	}
 }
 

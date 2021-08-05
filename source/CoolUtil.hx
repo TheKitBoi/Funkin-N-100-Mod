@@ -7,8 +7,6 @@ using StringTools;
 class CoolUtil
 {
 	public static var difficultyArray:Array<String> = ['Easy', "Normal", "Hard"];
-	// not so much of a cool utility eh? UGH
-
 
 	public static function difficultyFromInt(difficulty:Int):String
 	{

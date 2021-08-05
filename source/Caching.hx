@@ -62,7 +62,7 @@ class Caching extends MusicBeatState
 
 		bitmapData = new Map<String,FlxGraphic>();
 
-		text = new FlxText(FlxG.width / 2, FlxG.height / 2 + 300,0,"Preloading Assets...");
+		text = new FlxText(FlxG.width / 2, FlxG.height / 2 + 300,0,"Loading...");
 		text.size = 34;
 		text.alignment = FlxTextAlign.CENTER;
 		text.alpha = 0;
@@ -108,7 +108,7 @@ class Caching extends MusicBeatState
 		add(kadeLogo);
 		add(text);
 
-		trace('Preparing preload progress..');
+		trace('starting caching..');
 		
 		#if cpp
 		// update thread
@@ -165,16 +165,12 @@ class Caching extends MusicBeatState
 		{
 			FlxG.sound.cache(Paths.inst(i));
 			FlxG.sound.cache(Paths.voices(i));
-			trace("preload - " + i);  
-			// did like preload instead of cache bcuz some ppl dont know what 'cache' means
-
-   // so to simplify it i just put- preload..
-
+			trace("cached " + i);
 			done++;
 		}
 
 
-		trace("Preload Complete");
+		trace("Finished caching...");
 
 		loaded = true;
 

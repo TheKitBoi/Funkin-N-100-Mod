@@ -134,7 +134,7 @@ class FreeplayState extends MusicBeatState
 
 		 #if windows
 		 // Updating Discord Rich Presence
-		 DiscordClient.changePresence("In the N-100 Freeplay Menu", null);
+		 DiscordClient.changePresence("In the Freeplay Menu", null);
 		 #end
 
 		var isDebug:Bool = false;
@@ -272,8 +272,7 @@ class FreeplayState extends MusicBeatState
 		if (Math.abs(lerpScore - intendedScore) <= 10)
 			lerpScore = intendedScore;
 
-		scoreText.text = "YOUR BEST:" + lerpScore;
-		// made if you do dark magic and get more score
+		scoreText.text = "PERSONAL BEST:" + lerpScore;
 		comboText.text = combo + '\n';
 
 		if (FlxG.sound.music.volume > 0.8)

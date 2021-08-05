@@ -381,21 +381,6 @@ class Character extends FlxSprite
 				loadOffsetFile(curCharacter);
 
 				playAnim('idle');
-
-
-			case 'tankman':
-				frames = Paths.getSparrowAtlas('characters/Tankman');
-				animation.addByPrefix('idle', 'Idle', 24, false);
-				animation.addByPrefix('singUP', 'Sing Up', 24, false);
-				animation.addByPrefix('singDOWN', 'Sing Down', 24, false);
-				animation.addByPrefix('singLEFT', 'Sing Left', 24, false);
-				animation.addByPrefix('singRIGHT', 'Sing Right', 24, false);
-    animation.addByPrefix('ugh', 'Ugh', 24, false);
-
-				loadOffsetFile(curCharacter);
-
-
-				playAnim('idle');
 		}
 
 		dance();

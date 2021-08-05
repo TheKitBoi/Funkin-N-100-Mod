@@ -1643,12 +1643,12 @@ class PlayState extends MusicBeatState
 		}
 		if (data == -1)
 		{
-			trace("unknown bind - " + key);
+			trace("couldn't find a keybind with the code " + key);
 			return;
 		}
 		if (keys[data])
 		{
-			trace("input repeat on " + key);
+			trace("ur already holding " + key);
 			return;
 		}
 
@@ -1693,7 +1693,7 @@ class PlayState extends MusicBeatState
 					if (!note.isSustainNote && (note.strumTime - coolNote.strumTime) < 2)
 					{
 						trace('found a stacked/really close note ' + (note.strumTime - coolNote.strumTime));
-						// just remove it since it's a stacked note and shouldn't be there
+						// just fuckin remove it since it's a stacked note and shouldn't be there
 						note.kill();
 						notes.remove(note, true);
 						note.destroy();

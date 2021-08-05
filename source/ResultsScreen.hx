@@ -61,15 +61,15 @@ class ResultsScreen extends FlxSubState
 
         if (!PlayState.inResults) 
         {
-        music = new FlxSound().loadEmbedded(Paths.music('breakfast'), true, true);
-		music.volume = 0;
-		music.play(false, FlxG.random.int(0, Std.int(music.length / 2)));
+            music = new FlxSound().loadEmbedded(Paths.music('breakfast'), true, true);
+            music.volume = 0;
+            music.play(false, FlxG.random.int(0, Std.int(music.length / 2)));
             FlxG.sound.list.add(music);
         }
 
         background.alpha = 0;
 
-        text = new FlxText(20,-55,0,"Song Complete!");
+        text = new FlxText(20,-55,0,"Song Cleared!");
         text.size = 34;
         text.setBorderStyle(FlxTextBorderStyle.OUTLINE,FlxColor.BLACK,4,1);
         text.color = FlxColor.WHITE;
@@ -80,7 +80,7 @@ class ResultsScreen extends FlxSubState
         if (PlayState.isStoryMode)
         {
             score = PlayState.campaignScore;
-            text.text = "Week Complete!";
+            text.text = "Week Cleared!";
         }
 
         comboText = new FlxText(20,-75,0,'Judgements:\nSicks - ${PlayState.sicks}\nGoods - ${PlayState.goods}\nBads - ${PlayState.bads}\n\nCombo Breaks: ${(PlayState.isStoryMode ? PlayState.campaignMisses : PlayState.misses)}\nHighest Combo: ${PlayState.highestCombo + 1}\nScore: ${PlayState.instance.songScore}\nAccuracy: ${HelperFunctions.truncateFloat(PlayState.instance.accuracy,2)}%\n\n${Ratings.GenerateLetterRank(PlayState.instance.accuracy)}\n\n${!PlayState.loadRep ? "F1 - View replay\nF2 - Replay song" : ""}
@@ -140,7 +140,7 @@ class ResultsScreen extends FlxSubState
             var diff = obj[3];
             var judge = obj2;
             if (diff != (166 * Math.floor((PlayState.rep.replay.sf / 60) * 1000) / 166))
-            mean += diff;
+                mean += diff;
             if (obj[1] != -1)
                 graph.addToHistory(diff, judge, obj3);
         }
@@ -178,7 +178,7 @@ class ResultsScreen extends FlxSubState
 	override function update(elapsed:Float)
 	{
         if (music != null && music.volume < 0.5)
-			music.volume += 0.01 * elapsed;
+		    music.volume += 0.01 * elapsed;
 
         // keybinds
 
@@ -204,7 +204,7 @@ class ResultsScreen extends FlxSubState
             {
                 FlxG.sound.playMusic(Paths.music('freakyMenu'));
                 Conductor.changeBPM(102);
-                FlxG.switchState(new MainMenuState());
+                FlxG.switchState(new StoryMenuState());
             }
             else
                 FlxG.switchState(new FreeplayState());
@@ -274,7 +274,7 @@ class ResultsScreen extends FlxSubState
             if (PlayState.isSM)
                 PlayState.SONG = Song.loadFromJsonRAW(poop);
             else
-            PlayState.SONG = Song.loadFromJson(poop, PlayState.rep.replay.songName);
+                PlayState.SONG = Song.loadFromJson(poop, PlayState.rep.replay.songName);
             PlayState.isStoryMode = false;
             PlayState.storyDifficulty = PlayState.rep.replay.songDiff;
             LoadingState.loadAndSwitchState(new PlayState());
@@ -308,7 +308,7 @@ class ResultsScreen extends FlxSubState
             var poop:String = Highscore.formatSong(songFormat, PlayState.storyDifficulty);
 
             if (music != null)
-            music.fadeOut(0.3);
+                music.fadeOut(0.3);
 
             PlayState.SONG = Song.loadFromJson(poop, PlayState.SONG.song);
             PlayState.isStoryMode = false;

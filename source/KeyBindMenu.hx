@@ -2,7 +2,6 @@ package;
 
 /// Code created by Rozebud for FPS Plus (thanks rozebud)
 // modified by KadeDev for use in Kade Engine/Tricky
-// OMFG CLOWN !!!
 
 import flixel.input.gamepad.FlxGamepad;
 import flixel.util.FlxAxes;

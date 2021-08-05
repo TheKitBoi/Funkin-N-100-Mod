@@ -74,7 +74,7 @@ class TitleState extends MusicBeatState
 		PlayerSettings.init();
 
 		KadeEngineData.initSave();
-		 
+		
 		#end
 
 				
@@ -83,9 +83,9 @@ class TitleState extends MusicBeatState
 
 		curWacky = FlxG.random.getObject(getIntroTextShit());
 
-		trace('Hello World!');
+		trace('hello');
 
-		// DEBUG THING
+		// DEBUG BULLSHIT
 
 		super.create();
 
@@ -139,9 +139,9 @@ class TitleState extends MusicBeatState
 			logoBl.antialiasing = true;
 			}
 		logoBl.animation.addByPrefix('bump', 'logo bumpin', 24, false);
-			logoBl.updateHitbox();
-			// logoBl.screenCenter();
-			// logoBl.color = FlxColor.BLACK;
+		logoBl.updateHitbox();
+		// logoBl.screenCenter();
+		// logoBl.color = FlxColor.BLACK;
 
 		gfDance = new FlxSprite(FlxG.width * 9, FlxG.height * 9);
 		gfDance.frames = Paths.getSparrowAtlas('gfDanceTitle');
@@ -149,12 +149,12 @@ class TitleState extends MusicBeatState
 		gfDance.animation.addByIndices('danceRight', 'gfDance', [15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29], "", 24, false);
 		if(FlxG.save.data.antialiasing)
 			{
-		gfDance.antialiasing = true;
+				gfDance.antialiasing = true;
 			}
 		add(gfDance);
 		add(logoBl);
 
-		titleText = new FlxSprite(120, FlxG.height * 0.8);
+		titleText = new FlxSprite(100, FlxG.height * 0.8);
 		titleText.frames = Paths.getSparrowAtlas('titleEnter');
 		titleText.animation.addByPrefix('idle', "Press Enter to Begin", 24);
 		titleText.animation.addByPrefix('press', "ENTER PRESSED", 24);
@@ -162,7 +162,7 @@ class TitleState extends MusicBeatState
 
 		if(FlxG.save.data.antialiasing)
 			{
-		titleText.antialiasing = true;
+				titleText.antialiasing = true;
 			}
 		titleText.animation.play('idle');
 		titleText.updateHitbox();
@@ -173,7 +173,7 @@ class TitleState extends MusicBeatState
 		logo.screenCenter();
 		if(FlxG.save.data.antialiasing)
 			{
-		logo.antialiasing = true;
+				logo.antialiasing = true;
 			}
 		// add(logo);
 
@@ -210,7 +210,7 @@ class TitleState extends MusicBeatState
 		ngSpr.screenCenter(X);
 		if(FlxG.save.data.antialiasing)
 			{
-		ngSpr.antialiasing = true;
+				ngSpr.antialiasing = true;
 			}
 
 		FlxTween.tween(credTextShit, {y: credTextShit.y + 20}, 2.9, {ease: FlxEase.quadInOut, type: PINGPONG});
@@ -423,10 +423,7 @@ class TitleState extends MusicBeatState
 					createCoolText(['In Partnership', 'with']);
 			case 7:
 				if (Main.watermarks)
-				{
-					addMoreText('Kade Engine');
-					ngSpr.visible = true;
-				}
+					addMoreText('KadeDeveloper');
 				else
 				{
 					addMoreText('Newgrounds');
@@ -473,7 +470,7 @@ class TitleState extends MusicBeatState
 		{
 			remove(ngSpr);
 
-			FlxG.camera.flash(FlxColor.GREEN, 4);
+			FlxG.camera.flash(FlxColor.WHITE, 4);
 			remove(credGroup);
 
 			FlxTween.tween(logoBl,{y: -100}, 1.4, {ease: FlxEase.expoInOut});

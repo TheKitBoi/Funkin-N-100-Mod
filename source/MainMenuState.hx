@@ -40,9 +40,9 @@ class MainMenuState extends MusicBeatState
 
 	public static var nightly:String = "";
 
-	public static var kadeEngineVer:String = "1.6" + nightly;
+	public static var kadeEngineVer:String = "1.6.1" + nightly;
 	// require nightly question mark
-	public static var gameVer:String = "N-100 v1.10.3 - 0.2.7.1";
+	public static var gameVer:String = "N-100 v1.10.3.1 - 0.2.7.1";
 
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
